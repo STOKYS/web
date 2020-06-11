@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Arma 3 Scripting Guide - Basics (Page 1)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="../index.html">HOME</a>
+        <hr class="new1">
+        <button class="dropdown-btn"><i class="fa fa-caret-down"></i>BASICS</button>
+        <div class="dropdown-container">
+            <hr class="new1">
+            <a href="../a/index.html#intro">Introduction</a>
+            <hr class="new1">
+            <a href="../a/index.html#eden">Eden Editor</a>
+            <a href="../a/index.html#params">Mission Parameters</a>
+            <a href="../a/index.html#obj">Assets</a>
+            <hr class="new1">
+            <a href="../a/index.html#trigg">Triggers</a>
+            <a href="../a/index.html#modul">Modules</a>
+            <hr class="new1">
+            <a href="../b/index.html#civil">Ambient</a>
+            <a href="../b/index.html#audio">Audio</a>
+            <a href="../b/index.html#effect">Effects</a>
+            <a href="../b/index.html#envi">Enviroment</a>
+            <a href="../b/index.html#event">Events</a>
+            <a href="../b/index.html#intel">Intel</a>
+            <a href="../b/index.html#anim">Keyframe Animation</a>
+            <a href="../b/index.html#multi">Multiplayer</a>
+            <a href="../b/index.html#modi">Object Modifiers</a>
+            <a href="../b/index.html#livef">Live Feed</a>
+            <a href="../b/index.html#sceflo">Scenario Flow</a>
+            <a href="../b/index.html#site">Sites</a>
+            <a href="../b/index.html#strat">Strategic</a>
+            <a href="../b/index.html#sup">Support</a>
+            <hr class="new1">
+            <a href="../c/index.html#combat">Combat Patrol</a>
+            <a href="../c/index.html#vang">Vanguard</a>
+            <a href="../c/index.html#end">End Game</a>
+            <a href="../c/index.html#race">Race</a>
+            <a href="../c/index.html#old">Old Man</a>
+            <a href="../c/index.html#sector">Sector Control</a>
+            <a href="../c/index.html#warl">Warlords</a>
+            <a href="../c/index.html#zeus">Zeus</a>
+            <hr class="new1">
+        </div>
+        <button class="dropdown-btn"><i class="fa fa-caret-down"></i>ADVANCED</button>
+        <div class="dropdown-container">
+            <hr class="new1">
+            <a href="../d/index.html#intro">Introduction</a>
+            <hr class="new1">
+            <a href="../d/index.html#basic">Basics of Scripting</a>
+            <hr class="new1">
+            <a href="../d/index.html#init">File init.sqf</a>
+            <a href="../d/index.html#desc">File description.ext</a>
+            <hr class="new1">
+            <a href="../d/index.html#debrief">CfgDebriefing</a>
+            <hr class="new1">
+        </div>
+        <button class="dropdown-btn"><i class="fa fa-caret-down"></i>MASTER</button>
+        <div class="dropdown-container">
+            <a href="#">Introduction</a>
+            <a href="#">Triggers</a>
+            <a href="#">Modules</a>
+        </div>
+        <hr class="new1">
+        <button class="dropdown-btn"><i class="fa fa-caret-down"></i>INFO</button>
+        <div class="dropdown-container">
+            <hr class="new1">
+            <a href="../e/index.html#web">Website</a>
+            <a href="../e/index.html#arma">Arma 3</a>
+            <a href="../e/index.html#bis">Bohemia Interactive</a>
+            <hr class="new1">
+        </div>
+    </div>
+    <div class="main" style="background-image: url(../img/background3.png)">
+        <div class="page">
+            <hr class="new1">
+            <h1 id="web">This Website</h1>
+            <p>This website was created to help Arma 3 Comunity and make it simpler for them to find information about mission editing / scripting.</p>
+            <hr class="new1">
+            <h1 id="arma">Arma 3</h1>
+            <img src="../img/logo.png" alt="Arma 3 Logo" style="width: 20%; float: right;">
+            <p>ARMA 3 is an open-world, realism-based, military tactical shooter video game developed and published by
+                Bohemia Interactive. It was released for Microsoft Windows in September 2013, and later announced for
+                macOS and Linux in August 2015.<sup><a href="https://en.wikipedia.org/wiki/ARMA_3" target="_blank">Wiki</a></sup></p>
+            <a href="https://arma3.com/" target="_blank">Arma 3 Website</a>
+            <hr class="new1">
+            <h1 id="bis">Bohemia Interactive</h1>
+            <img src="../img/bilogo.png" alt="Bohemia Interactive Logo" style="width:20%; float:right">
+            <p>Bohemia Interactive a.s. is a Czech video game developer and publisher based in Prague. The company
+                focuses on creating military simulation games such as Operation Flashpoint: Cold War Crisis and the ARMA
+                series. It is also known for having worked on a game conversion of the DayZ mod created for ARMA 2.
+                <br><br>
+                Founded by Marek Španěl in May 1999, the studio released its first game in 2001, a military shooter
+                titled Operation Flashpoint: Cold War Crisis, which received critical acclaim and brought recognition
+                for the studio. Following Operation Flashpoint was a series of downturns, such as porting the game to
+                Xbox, which led to financial losses and the development of a sequel later abandoned by the publisher
+                Codemasters. The studio fell into financial troubles until the United States Marine Corps employed the
+                studio to create simulation games to train soldiers. A new division called Bohemia Interactive
+                Simulations was created, and later spun off and became a standalone business entity. Following
+                Codemasters' decision of not supporting the studio, Bohemia Interactive decided to develop a spiritual
+                successor to Cold War Crisis titled ARMA: Armed Assault. It was both a critical and financial success,
+                spawning a number of sequels. Smaller projects such as Take On Helicopters were also released.
+                <br><br>
+                In 2012, Dean Hall produced DayZ a mod for ARMA 2, that prompted the studio to develop a standalone
+                game. The same year saw the arrest of two employees of Bohemia, who were charged with espionage by
+                Greece and jailed for 129 days. This event had significantly lowered team morale and forced the team to
+                rename ARMA 3's setting to a fictional one. The company is working on several new projects, including
+                making a survival game named Vigor, preparing DayZ for an eventual full release and developing Ylands, a
+                sandbox game which was part of Bohemia Incubator, a platform for Bohemia Interactive to release small,
+                experimental projects.<sup><a href="https://en.wikipedia.org/wiki/Bohemia_Interactive" target="_blank">Wiki</a></sup>
+            </p>
+            <a href="https://www.bohemia.net/" target="_blank">Bohemia Interactive Website</a>
+            <hr class="new1">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="../js/navbar.js"></script>
+</body>
+
+</html>

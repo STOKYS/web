@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Arma 3 Scripting Guide - Basics (Page 3)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="../index.html">HOME</a>
+        <hr class="new1">
+        <button class="dropdown-btn"><i class="fa fa-caret-down"></i>BASICS</button>
+        <div class="dropdown-container">
+            <hr class="new1">
+            <a href="../a/index.html#intro">Introduction</a>
+            <hr class="new1">
+            <a href="../a/index.html#eden">Eden Editor</a>
+            <a href="../a/index.html#params">Mission Parameters</a>
+            <a href="../a/index.html#obj">Assets</a>
+            <hr class="new1">
+            <a href="../a/index.html#trigg">Triggers</a>
+            <a href="../a/index.html#modul">Modules</a>
+            <hr class="new1">
+            <a href="../b/index.html#civil">Ambient</a>
+            <a href="../b/index.html#audio">Audio</a>
+            <a href="../b/index.html#effect">Effects</a>
+            <a href="../b/index.html#envi">Enviroment</a>
+            <a href="../b/index.html#event">Events</a>
+            <a href="../b/index.html#intel">Intel</a>
+            <a href="../b/index.html#anim">Keyframe Animation</a>
+            <a href="../b/index.html#multi">Multiplayer</a>
+            <a href="../b/index.html#modi">Object Modifiers</a>
+            <a href="../b/index.html#livef">Live Feed</a>
+            <a href="../b/index.html#sceflo">Scenario Flow</a>
+            <a href="../b/index.html#site">Sites</a>
+            <a href="../b/index.html#strat">Strategic</a>
+            <a href="../b/index.html#sup">Support</a>
+            <hr class="new1">
+            <a href="#combat">Combat Patrol</a>
+            <a href="#vang">Vanguard</a>
+            <a href="#end">End Game</a>
+            <a href="#race">Race</a>
+            <a href="#old">Old Man</a>
+            <a href="#sector">Sector Control</a>
+            <a href="#warl">Warlords</a>
+            <a href="#zeus">Zeus</a>
+            <hr class="new1">
+        </div>
+        <button class="dropdown-btn"><i class="fa fa-caret-down"></i>ADVANCED</button>
+        <div class="dropdown-container">
+            <hr class="new1">
+            <a href="../d/index.html#intro">Introduction</a>
+            <hr class="new1">
+            <a href="../d/index.html#basic">Basics of Scripting</a>
+            <hr class="new1">
+            <a href="../d/index.html#init">File init.sqf</a>
+            <a href="../d/index.html#desc">File description.ext</a>
+            <hr class="new1">
+            <a href="../d/index.html#debrief">CfgDebriefing</a>
+            <hr class="new1">
+        </div>
+        <button class="dropdown-btn"><i class="fa fa-caret-down"></i>MASTER</button>
+        <div class="dropdown-container">
+            <a href="#">Introduction</a>
+            <a href="#">Triggers</a>
+            <a href="#">Modules</a>
+        </div>
+        <hr class="new1">
+    </div>
+    <div class="main" style="background-image: url(../img/background5.jpg)">
+        <div class="page">
+            <hr class="new1">
+            <h1 id="combat">Combat Patrol</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1n8NXpei5lo" frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Combat Patrol is a gamemode where your objective is randomly generated, most likely you will get a task
+                to
+                find and destroy something, the area will be guarded by enemy units.</p>
+            <p>It's best to play in a team of 4 people and more but you can play it alone.</p>
+            <p>Combat Patrol is probably the easiest gamemode to set up, all you need to do is to place the Combat
+                Patrol Init. module.</p>
+            <p>There are few modules in this category, I'll list them below:</p>
+            <ul>
+                <li>Combat Patrol Init. - Main module that creates the randomly generated missions.</li>
+                <li>Combat Patrol Location Add - Adds selectable position on the map.</li>
+                <li>Combat Patrol Location Remove - Removes selectable position on the map.</li>
+                <li>Combat Patrol Location Reposition - Repositiones selectable position on the map.</li>
+                <li>Combat Patrol Azimuth Blacklist - Bans area from having extraction point there.</li>
+            </ul>
+            <hr class="new1">
+            <h1 id="vang">Vanguard</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RMCTwBGx8IM" frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Vanguard is a gamemode where your objective is to find, load and deliver special weapon back to your
+                base. This gamemode is primarily focused on driving vehicles (mainly tanks).</p>
+                <p>It's best to play in a two teams of 8 and more but you can play it alone (without competition).</p>
+                <p>How to set up:</p>
+                <ol>
+                    <li>Open your Systems: Modules: Gameplay Modes.</li>
+                    <li>Take the Vanguard: Objective Area module and place it on the ground.</li>
+                    <li>Then take 2 to 3 Vanguard: Starting Area modules and place them on the ground (Only one module for each faction).</li>
+                    <li>Place vehicles in the Starting Area modules and it's done.</li>
+                </ol>
+            <hr class="new1">
+            <h1 id="end">End Game</h1>
+            <hr class="new1">
+            <h1 id="old">Old Man</h1>
+            <div class="wip">
+                <p>We are sorry.</p>
+                <p>This article is on its way, but it's a very large module to cover.</p>
+                <p>I couldn't even find any article on it, so I can't even link anything.</p>
+            </div>
+            <hr class="new1">
+            <h1 id="sector">Sector Control</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nPFjEWkdjmg" frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Sector Control is a gamemode where 2-3 sided compete for complete dominance by capturing Sectors.</p>
+            <p>How to set up:</p>
+            <ol>
+                <li>Open your Systems: Modules: Multiplayer.</li>
+                <li>Take the Sector module and place it on the ground.</li>
+                <li>Now go to the Systems: Logic Entities: Location.</li>
+                <li>From there take the Area logic entity and sync. it to the sector.</li>
+                <li>And now go to the Systems: Logic Entities: Sides.</li>
+                <li>There select the sided that would be fighting for that sector, place them and sync. them to the
+                    Sector.</li>
+            </ol>
+            <hr class="new1">
+            <h1 id="warl">Warlords</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8XAqPHHOSQs" frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Warlords is a gamemode where two sides compete for complete dominance over the map.</p>
+            <p>Warlords gamemode is very similar to Sector Control, with few diffirences that you can buy units with
+                money system.</p>
+            <p>How to set up:</p>
+            <ol>
+                <li>Open your Systems: Modules: Warlords.</li>
+                <li>Grab all the essential modules and place them on the ground (Essential modules are: Warlords Init,
+                    two times Warlords Base, Warlords Sector).</li>
+                <li>Warlords Base module must be synced. to the Warlords Sector modules.</li>
+                <li>That's it.</li>
+            </ol>
+            <hr class="new1">
+            <h1 id="zeus">Zeus</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zZXOJ63hSvU" frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Zeus is a gamemode where player takes place as god, he can spawn / control units and many more. </p>
+            <p>It's very easy to set up, all you got to do is to place the Game Master module on the ground, all side
+                modules must be synced. to the main one.</p>
+            <p>Zeus modules has a lot of types, I'll list the most important ones:</p>
+            <ul>
+                <li>Game Master - Main module, sync. to the playable character.</li>
+                <li>Add Camera Area - Sets Area where Zeus can go.</li>
+                <li>Add Editing Area - Sets Area where Zeus can edit Assets.</li>
+                <li>Manage Resources - Sets how many resources Zeus would get.</li>
+                <li>Set Costs (Default) - Sets default cost of units.</li>
+                <li>Set Costs (Side) - Sets how much would every side cost.</li>
+                <li>Set Costs - Objects - Sets how much objects would cost.</li>
+                <li>Set Costs - Soldiers & Vehicles - Sets how much units would cost.</li>
+                <li>Zeus Lightning Bolt - Spawns a Lightning Bolt.</li>
+            </ul>
+            <hr class="new1">
+            <div class="center">
+                <div class="pagination">
+                    <a href="../a/index.html">1</a>
+                    <a href="../b/index.html#">2</a>
+                    <a href="#combat" class="active">3</a>
+                </div>
+            </div>
+            <hr class="new1">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="../js/navbar.js"></script>
+</body>
+
+</html>

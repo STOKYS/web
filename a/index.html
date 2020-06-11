@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Arma 3 Scripting Guide - Basics (Page 1)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../img/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+  <div class="sidenav">
+    <a href="../index.html">HOME</a>
+    <hr class="new1">
+    <button class="dropdown-btn"><i class="fa fa-caret-down"></i>BASICS</button>
+    <div class="dropdown-container">
+      <hr class="new1">
+      <a href="#intro">Introduction</a>
+      <hr class="new1">
+      <a href="#eden">Eden Editor</a>
+      <a href="#params">Mission Parameters</a>
+      <a href="#obj">Assets</a>
+      <hr class="new1">
+      <a href="#trigg">Triggers</a>
+      <a href="#modul">Modules</a>
+      <hr class="new1">
+      <a href="../b/index.html#civil">Ambient</a>
+      <a href="../b/index.html#audio">Audio</a>
+      <a href="../b/index.html#effect">Effects</a>
+      <a href="../b/index.html#envi">Enviroment</a>
+      <a href="../b/index.html#event">Events</a>
+      <a href="../b/index.html#intel">Intel</a>
+      <a href="../b/index.html#anim">Keyframe Animation</a>
+      <a href="../b/index.html#multi">Multiplayer</a>
+      <a href="../b/index.html#modi">Object Modifiers</a>
+      <a href="../b/index.html#livef">Live Feed</a>
+      <a href="../b/index.html#sceflo">Scenario Flow</a>
+      <a href="../b/index.html#site">Sites</a>
+      <a href="../b/index.html#strat">Strategic</a>
+      <a href="../b/index.html#sup">Support</a>
+      <hr class="new1">
+      <a href="../c/index.html#combat">Combat Patrol</a>
+      <a href="../c/index.html#vang">Vanguard</a>
+      <a href="../c/index.html#end">End Game</a>
+      <a href="../c/index.html#race">Race</a>
+      <a href="../c/index.html#old">Old Man</a>
+      <a href="../c/index.html#sector">Sector Control</a>
+      <a href="../c/index.html#warl">Warlords</a>
+      <a href="../c/index.html#zeus">Zeus</a>
+      <hr class="new1">
+    </div>
+    <button class="dropdown-btn"><i class="fa fa-caret-down"></i>ADVANCED</button>
+    <div class="dropdown-container">
+      <hr class="new1">
+      <a href="../d/index.html#intro">Introduction</a>
+      <hr class="new1">
+      <a href="../d/index.html#basic">Basics of Scripting</a>
+      <hr class="new1">
+      <a href="../d/index.html#init">File init.sqf</a>
+      <a href="../d/index.html#desc">File description.ext</a>
+      <hr class="new1">
+      <a href="../d/index.html#debrief">CfgDebriefing</a>
+      <hr class="new1">
+    </div>
+    <button class="dropdown-btn"><i class="fa fa-caret-down"></i>MASTER</button>
+    <div class="dropdown-container">
+      <a href="#">Introduction</a>
+      <a href="#">Triggers</a>
+      <a href="#">Modules</a>
+    </div>
+    <hr class="new1">
+    <button class="dropdown-btn"><i class="fa fa-caret-down"></i>INFO</button>
+    <div class="dropdown-container">
+      <hr class="new1">
+      <a href="../e/index.html#web">Website</a>
+      <a href="../e/index.html#arma">Arma 3</a>
+      <a href="../e/index.html#bis">Bohemia Interactive</a>
+      <hr class="new1">
+    </div>
+  </div>
+  <div class="main" style="background-image: url(../img/background2.jpg)">
+    <div class="page">
+      <hr class="new1">
+      <h1 id="intro">Introduction</h1>
+      <p>
+        Most of the basics here have nothing to do with actual scripting, but offers lots of useful information on
+        mission editing for absolute beginners using Triggers, Modules, etc..</p>
+      <p>If you already know how to use them and
+        how they work you can skip basics and go right to the <a href="../d/index.html">ADVANCED</a> section.</p>
+      <hr class="new1">
+      <h1 id="eden">Eden Editor</h1>
+      <p>Eden Editor is a 3D Mission developing software build-in to Arma 3.</p>
+      <p>To make some cool mission you must first start Arma 3 when it loads up you can't miss a big box on the right
+        saying "EDITOR", press it and you're in.</p>
+      <h2>Movement</h2>
+      <p>In the Editor, controls are not so different from normal controls of the game, WASD for moving in specific
+        directions, Q and Z to go up or down. To rotate your camera use your RIGHT MOUSE BUTTON, to select objects in
+        the scenery LEFT CLICK them, you can select multiple objects by holding LEFT MOUSE BUTTON and dragging your
+        mouse over the area you want to select. You can move the objects, rotate them by holding SHIFT, or even edit
+        their attributes by DOUBLE CLICKING them, but we will come to that later.</p>
+      <p>Now you know the basic movement.</p>
+      <hr class="new1">
+      <h1 id="params">Mission Parameters</h1>
+      <a target="_blank" href="../img/exa2.png">
+        <img class="tuttype1" style="width: 33%" src="../img/exa1.png" alt="Mission Parameters">
+      </a>
+      <p>Next thing we need to show are Parameters.</p>
+      <p>You can find them on the Top Left side of your screen, click them and four options should pop-up: "General",
+        "Environment", "Multiplayer" and "Performance". </p>
+      <p>Let's look at every one of them, starting with General.</p>
+      <br>
+      <br>
+      <h2>General</h2>
+
+      <a target="_blank" href="../img/exa2.png">
+        <img class="tuttype1" style="width: 33%" src="../img/exa2.png" alt="General Parameters">
+      </a>
+      <p>The first thing we see is PRESENTATION, there you need to set the name of your scenario and display your
+        name/name of the creator.</p>
+      <p>We don't need to be bothered with the next 3 right now, they allow creators to use custom made thumbnails for
+        Steam Workshop for everyone to see. Those should be changed when the scenario is finished.</p>
+      <p>STATES are simple rules modifications allowing GPS, Map, HUD, Briefing and etc.</p>
+      <p>UNLOCK allows the creator to make keys, those can be then used for unlocking some multi-scenario stories.
+        Really nice feature.</p>
+      <p>INIT, there you can write code that will execute at the start of the mission. But I recommend to make
+        "init.sqf" file in your mission folder, normally located:
+        <code>C:\Users\User\Documents\Arma3\missions\mission_name</code>, it can make it more organised there, more on
+        it <a href="../d/index.html#init">here</a>.</p>
+      <p>And then there's MISC., probably one of the most gameplay-wise important things to edit. You can change side
+        relationships, allowing you to make scenarios where Independent faction attack Blufor, Opfor, or even both. It
+        can't be changed mid-game without simple code, but that's also for later.</p>
+      <h2>Enviroment</h2>
+
+      <a target="_blank" href="../img/exa3.png">
+        <img class="tuttype1" style="width: 33%" src="../img/exa3.png" alt="Enviroment Parameters">
+      </a>
+      <p>The most basic thing to change in Enviroment setting is of course DATE, you can change Year, Moth, Day and
+        Time, you will be using that a lot probably.</p>
+      <p>WEATHER FORECAST is nothing to be worried about, if you don't want to change selected weather in the middle of
+        the mission.</p>
+      <p>OVERCAST, it does what it's called, changes overcast.</p>
+      <p>FOG, You can change 3 main parameters, and all of them change the density of the fog one way or another.</p>
+      <p>RAIN and LIGHTNING change the intensity of those two, 0% meaning off.</p>
+      <p>WAVES changes strenght of ocean waves.</p>
+      <h2>Multiplayer</h2>
+
+      <a target="_blank" href="../img/exa4.png">
+        <img class="tuttype1" style="width: 33%" src="../img/exa4.png" alt="Multiplayer Parameters">
+      </a>
+      <p>Very useful menu if you're doing a multiplayer mission.</p>
+      <p>TYPE, there you can change gamemode, it won't affect gameplay but other on Steam would know what to expect. And
+        then you choose Min and Max players on the server, it can be any number, but remember: more people = more
+        hardware power required.
+      </p>
+      <p>LOBBY, Summary will show everyone in the lobby some text you want to display to them, but Enable AI is much
+        more important, it sets if the playable units will be controlled by AI if there are not enough people on the
+        server.
+        And Auto-assign slots will take permission from players to choose what they want to play as.</p>
+      <p>RESPAWN, very important in multiplayer missions, if you're aiming at a more realistic mission you can disable
+        them. But preferably leave them ON, that allows making some tweaks to the respawn rules, for example, you can
+        make respawn tickets, thus allowing respawn only certain times, or making player respawn on the position of
+        their dead body/custom spawn points that can be made by <code>respawn_west</code> (depending on the side). Or
+        you can make it much simpler by using modules that you can find <a href="../b/index.html#multi">here</a>.</p>
+      <p>TASKS, not that useful, only used if you want shared tasks with all units.</p>
+      <p>REVIVE, allows reviving other players in the battlefield, you can either turn off or on, maybe with some rules
+        that you need to be medic or need to have medkit, the choice is yours.</p>
+      <h2>Performance</h2>
+      <a target="_blank" href="../img/exa5.png">
+        <img class="tuttype1" style="width: 33%" src="../img/exa5.png" alt="Performance Parameters">
+      </a>
+      <p>Performance can overall, well... change your or servers performance by despawning wrecks, dead bodies and their
+        equipment.</p>
+      <p>Few options can be tweaked:</p>
+      <ul>
+        <li>Minimum Distance - changes at what distance the bodies would start to vanish.</li>
+        <li>Limit - Limit of bodies.</li>
+        <li>Delay - Min and Max delay between when the bodies start to vanish.</li>
+        <li>Dynamic Simulation - Changes despawn time and distance on diffirent types of objects (As you can see,
+          Charaters will disapper 500m away, while Props only 50m).</li>
+      </ul>
+      <br>
+      <p>Now you know How to change Parameters.</p>
+      <br>
+      <br>
+      <br>
+      <hr class="new1">
+      <h1 id="obj">Assets</h1>
+      <a target="_blank" href="../img/exa6.png">
+        <img class="tuttype1" style="width: 20%" src="../img/exa6.png" alt="Assets">
+      </a>
+      <p>Assets are crucial for the game, they are located at the Top Right of the screen. Can be placed by clicking at
+        one of them and clicking again on the scenery.</p>
+      <p>You can edit every Asstet by double clicking on them.</p>
+      <p>And they are split into 6 main categories: Objects, Collections, Triggers, Waypoints, Systems, and Markers.</p>
+      <p>You can find all the assets <a href="https://community.bistudio.com/wiki/Arma_3_Assets"
+          target="_blank">here</a>.</p>
+      <h2>Objects</h2>
+      <p>Objects consist of single Characters of 4 Different factions (BLUFOR, OPFOR, INDEPENDENT, CIVILIAN) and Props.
+      </p>
+      <ul>
+        <li>BLUFOR - In the original game consists of NATO (North Atlantic Treaty Organization) soldiers.</li>
+        <li>OPFOR - In the original game consists of fictional Arabic faction CSAT (Canton Protocol Strategic Alliance
+          Treaty).</li>
+        <li>INDEPENDENT - In the original game consist of factions AAF (Altis Armed Forces) and rebel faction FIA
+          (Freedom and Independence Army).</li>
+        <li>CIVILIAN - In the original game consist of Altis residents, pretty useful.</li>
+        <li>PROPS - Make large portion of all Assets in the game but not as important. Consist of diffirent models of
+          Buildings, Cars, Wrecks etc..</li>
+      </ul>
+      <h2>Compositions</h2>
+      <p>Compositions are basically groups of objects, creating Squads, Teams, Blockades, Camps.</p>
+      <p>But there's one special type, Custom, this one allows you to create your own compositions of Assets.</p>
+      <h2>Triggers</h2>
+      <p>Those are the most important parts of mission editing and Scripting. They allow creating all sorts of events by
+        fulfilling set conditions.</p>
+      <p>More on them <a href="#trigg">here.</a></p>
+      <h2>Waypoints</h2>
+      <p>Waypoint, as you could have guessed, allows a light type of controlling AI movement. You can simply create a
+        waypoint by having AI unit selected and SHIFT + LEFT CLICKING anywhere on the map, that creates waypoint which
+        you can then simply edit. There are many types of waypoints, I'll list the most important and used:</p>
+      <ul>
+        <li>MOVE - Makes unit simply move to the designated position.</li>
+        <li>LAND - Very useful if you're making mission where Heli or Plane needs to land.</li>
+        <li>DESTROY - Unit will go to their target and destoy it.</li>
+        <li>CYCLE - Great for units patroling specific area, never stops.</li>
+        <li>GET IN - Makes units get it vehicles.</li>
+        <li>GET OUT - Makes unit get out of vehicles.</li>
+        <li>FOLLOW - Unit will follow character with the waipoint on them.</li>
+      </ul>
+      <h2>Systems</h2>
+      <p>Systems contain of Game logic and <a href="#modul">Modules.</a></p>
+      <p>Game logic won't that useful, the only thing we need to worry about is Logic AND, Logic OR and many Assets used
+        in
+        <a href="../c/index.html#sector">Sector Control</a> gamemode.</p>
+      <h2>Markers</h2>
+      <p>Markers are used as visible marks/areas on the map. But Asset "Empty" can be also very useful when scripting,
+        its main purpose would be designating specific invisible areas.</p>
+      <h2 id="attribute">Attributes</h2>
+      <a target="_blank" href="../img/exa8.png">
+        <img class="tuttype1" style="width: 33%" src="../img/exa8.png" alt="Attributes">
+      </a>
+      <p>Attributes are a really important part of all Assets, they allow to change how they behave or their look, but
+        mainly we are going to be using them to edit "Variable Name" and "Init." field.</p>
+
+      <p>As you can see, I've already set Variable Name to <code>unit_1</code>, by default <code>player</code> character
+        name is player (but only in Singleplayer). That's how we're going to refer to this object in scripts. Every
+        Asset must have a different name, variables aren’t case sensitive (“a” is the same as “A”).</p>
+
+      <p>In the "Init." field you can put simple or complex commands or even tasks to execute .sqf and .sqs files from
+        the mission folder. I've already put a simple line of code that would stop me from ever hurting myself, the code
+        is "<code>this allowDamage false</code>". If you're going to refer to the selected object in its Init. tab, use
+        <code>this</code> or its "Variable Name". Next is <code>allowDamage</code>, that is a command that's asking "Can
+        you damage this object?" expecting boolean type answer if its true: <code>true</code>, or not:
+        <code>false</code>.</p>
+      <p>Transformation does exactly what it says, you can precisely set object XYZ coordinates and rotation, and
+        placement radius randomizes object position within the set radius (can be different every time).</p>
+      <p>Control sets if the object is controlled by a player or computer. If more than one unit is playable you can
+        choose one of them to play as, very useful in multiplayer missions. Object Identity changes name of the unit
+        displayed on multiplayer mission startup.</p>
+      <p>States change player and AI skill level, health, ammo.
+        Also, you can change the rank of units (not really that useful, only immersion factor), and their stance at the
+        start of the mission.</p>
+      <p>Special states change rules of the unit, you can make the model invisible, prevent the unit from respawning,
+        prevent people from getting hurt (same as in the Init.). Disabling simulation makes the unit “vegetable”, he
+        will be there but expect no response on anything.</p>
+      <p>Identity doesn’t change anything important, except maybe voice and Insignia.</p>
+      <p>Probability of presence could be useful but not really, it changes the probability of the Asset existing when
+        the mission starts.</p>
+      <p>Electronic and sensors only affect if objects can be detected by them or not.</p>
+      <hr class="new1">
+      <h1 id="trigg">Triggers</h1>
+      <a target="_blank" href="../img/exa7.png">
+        <img class="tuttype1" style="width: 33%" src="../img/exa7.png" alt="Triggers">
+      </a>
+      <p>As I've already said, triggers are the most important part of scripting and mission making. They run set
+        script/command when all the conditions are met.</p>
+      <p>We can skip Variable name and Transformation, we already told that. If you haven't seen that go right <a
+          href="#attribute">here</a>. The only thing new is a shape, but you can figure out what that does.</p>
+      <p>Trigger Activation. With my current setting it does activate when any player walks into that area and it will
+        end the mission with Debriefing NO.1, you can change the debriefing by looking into by editing file
+        description.ext and making new class <code>CfgDebriefing{}</code> and in it <code>class End1{}</code> but more
+        on that <a href="../d/index.html#debriefing">here</a>.<br>There are not many Activation Type presets, but "None"
+        and "End" will be just enough. Activation has many options, four main types are these:</p>
+      <ul>
+        <li>Side Activation - Trigger will be activated</li>
+        <li>Sector Side Activation - Used in Sector Control gamemodes, the trigger will activate when the set side
+          captures the set sector.</li>
+        <li>Radio Activation - Triggers activated by your remote command thru radio, by pressing 0 0 and then
+          number corresponding with the command (commands name will be set in the "Text" field above).</li>
+        <li>Unique object Activation - Object synced to the trigger as owner.</li>
+      </ul>
+      <p>Then there are activations types eighter present, not present, or detected by set side.</p>
+      <p>Expression allow creator to use their own conditions and on Activation/Deactication scripts, the scripts can be
+        written in the box or executed from a .sqf file like this: <code>_this = execVM "script.sqf";</code>. (names
+        with _ are "local variables" and only work inside one script or trigger.</p>
+      <p>Timer can be set on Countdown (Script will start certain time after trigger activation) and Timeout (Trigger
+        must be activated until the timer runs out or script On Deactivation will execute).</p>
+      <p>Effect are Sound Effects and Music that will be played when trigger meets its conditions.</p>
+      <hr class="new1">
+      <h1 id="modul">Modules</h1>
+      <p>Modules are basically self-sufficient scripts made into Assets. They are very easy to use even for someone who
+        never wrote a single line of code. So that's why the rest of the page will be talking about individual Modules.
+        Completed with video tutorial/showcase.
+      </p>
+      <hr class="new1">
+      <div class="center">
+        <div class="pagination">
+          <a href="#intro" class="active">1</a>
+          <a href="../b/index.html">2</a>
+          <a href="../c/index.html">3</a>
+        </div>
+      </div>
+      <hr class="new1">
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="../js/navbar.js"></script>
+</body>
+
+</html>

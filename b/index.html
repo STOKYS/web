@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Arma 3 Scripting Guide - Basics (Page 2)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../img/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+  <div class="sidenav">
+    <a href="../index.html">HOME</a>
+    <hr class="new1">
+    <button class="dropdown-btn"><i class="fa fa-caret-down"></i>BASICS</button>
+    <div class="dropdown-container">
+      <hr class="new1">
+      <a href="../a/index.html#intro">Introduction</a>
+      <hr class="new1">
+      <a href="../a/index.html#eden">Eden Editor</a>
+      <a href="../a/index.html#params">Mission Parameters</a>
+      <a href="../a/index.html#obj">Assets</a>
+      <hr class="new1">
+      <a href="../a/index.html#trigg">Triggers</a>
+      <a href="../a/index.html#modul">Modules</a>
+      <hr class="new1">
+      <a href="#civil">Ambient</a>
+      <a href="#audio">Audio</a>
+      <a href="#effect">Effects</a>
+      <a href="#envi">Enviroment</a>
+      <a href="#event">Events</a>
+      <a href="#intel">Intel</a>
+      <a href="#anim">Keyframe Animation</a>
+      <a href="#multi">Multiplayer</a>
+      <a href="#modi">Object Modifiers</a>
+      <a href="#livef">Live Feed</a>
+      <a href="#sceflo">Scenario Flow</a>
+      <a href="#site">Sites</a>
+      <a href="#strat">Strategic</a>
+      <a href="#sup">Support</a>
+      <hr class="new1">
+      <a href="../c/index.html#combat">Combat Patrol</a>
+      <a href="../c/index.html#vang">Vanguard</a>
+      <a href="../c/index.html#end">End Game</a>
+      <a href="../c/index.html#race">Race</a>
+      <a href="../c/index.html#old">Old Man</a>
+      <a href="../c/index.html#sector">Sector Control</a>
+      <a href="../c/index.html#warl">Warlords</a>
+      <a href="../c/index.html#zeus">Zeus</a>
+      <hr class="new1">
+    </div>
+    <button class="dropdown-btn"><i class="fa fa-caret-down"></i>ADVANCED</button>
+    <div class="dropdown-container">
+      <hr class="new1">
+      <a href="../d/index.html#intro">Introduction</a>
+      <hr class="new1">
+      <a href="../d/index.html#basic">Basics of Scripting</a>
+      <hr class="new1">
+      <a href="../d/index.html#init">File init.sqf</a>
+      <a href="../d/index.html#desc">File description.ext</a>
+      <hr class="new1">
+      <a href="../d/index.html#debrief">CfgDebriefing</a>
+      <hr class="new1">
+    </div>
+    <button class="dropdown-btn"><i class="fa fa-caret-down"></i>MASTER</button>
+    <div class="dropdown-container">
+      <a href="#">Hostage Situation</a>
+      <a href="#">Triggers</a>
+      <a href="#">Modules</a>
+    </div>
+    <hr class="new1">
+  </div>
+  <div class="main" style="background-image: url(../img/background4.jpg)">
+    <div class="page">
+      <hr class="new1">
+      <h1 id="civil">Ambient</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/u2c7d69dpTU" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Ambient / Civilian Presence modules add civilians to the designated area.</p>
+      <p>Civilians can't spawn if player is nearby.</p>
+      <p>How to set up:</p>
+      <ol>
+        <li>Open your Systems: Modules: Ambient.</li>
+        <li>All the modules there, place them on the ground.</li>
+        <li>Sync. "Civilian Presence Spawnpoint" and "Civiliand Presence Position" to the main module "Civilian
+          Presence".</li>
+        <li>You can tweak the Attributes of the modules but thats all.</li>
+      </ol>
+      <hr class="new1">
+      <h1 id="audio">Audio</h1>
+      <iframe width="560px" height="315px" src="https://www.youtube.com/embed/biqVmEMiM9A" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Audio is one of the smallest modules, it plays radio message from factions HQ.
+      </p>
+      <p>How to set up:</p>
+      <ol>
+        <li>Open your Systems: Modules: Audio.</li>
+        <li>Select the only one module there and place it on the ground.</li>
+        <li>Double click it and select Side voice and then the actual message.</li>
+        <li>All you need now is some way to activate it. It can be done via Trigger.</li>
+        <li>Go to Triggers section, select trigger and place it o the ground.</li>
+        <li>Edit the activation as you want and then sync. it to the radio message.</li>
+        <li>Now just activate the trigger in the game and there you go.</li>
+      </ol>
+
+      <hr class="new1">
+      <h1 id="effect">Effects</h1>
+      <a target="_blank" href="../img/exa9.png">
+        <img class="tuttype1" style="width: 50%" src="../img/exa9.png" alt="Assets">
+      </a>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pPH9AVw3bDc" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Effects are cool addition to make you immerse in the mission. And they also contain very useful Air Strikes and
+        Artillery Strikes.</p>
+      <p>They are no problem to set up, you just place them on the ground or in the sky and it's done.</p>
+      <p>None of the needs to be triggered by trigger, they trigger them selfs on start.</p>
+      <p>There are all the effects available:</p>
+      <ul>
+        <li>Plankton - Adds plankton to the water (Must be placed in the water).</li>
+        <li>Bubbles - Adds bubbles to the water, can be customized to vary in sizes (Must be placed it the water).</li>
+        <li>Ordnance - Calls for an Artillery Support on module position (Can be activated via. Trigger).</li>
+        <li>CAS - Calls for an Air Support on module position (Can be activated via. Trigger).</li>
+        <li>IR Grenade - Adds flashing grenade on the ground (Only can be seen thru Night vision or Thermal vision).
+        </li>
+        <li>Flare - Adds Flare in the skyes, custom color.</li>
+        <li>Fire - Adds Fire effect on the ground (It can hurt you, customizable colors).</li>
+        <li>Cartridges - Adds set number of cartridges on the ground (Must be placed on the Terrain).</li>
+        <li>Smoke Grenade - Adds activated smoke grenade on the ground.</li>
+        <li>Smoke - Adds dark smoke effect on the ground.</li>
+        <li>Chem Light - Adds chem light on the ground (Can be seen in the dark, great for navigation).</li>
+        <li>Tracers - Adds tracers shooting from the ground in the sky (Target can be selected).</li>
+      </ul>
+      <hr class="new1">
+      <h1 id="envi">Enviroment</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IL_-gi7i_Hc" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Enviroment modules mainly let you manipulate with terrain objects and change time / weather.</p>
+      <p>There are six enviroment modules:</p>
+      <ul>
+        <li>Edit Terrain Object - Allow you to edit selected terrain object (lock door, destroy object, remove object).
+        </li>
+        <li>Hide Terrain Objects - Allow you to hide large portions on terrain objects (can be filtered by types:
+          vegetation, buildings etc..)</li>
+        <li>Post-Process - Changes screen colors (black and white).</li>
+        <li>Skip Time - Skips set hours of time.</li>
+        <li>Time Acceleration - Changes how long one in-game hour is.</li>
+        <li>Weather - Allows you to change weather.</li>
+      </ul>
+      <hr class="new1">
+      <h1 id="event">Events</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/uJsPIR7uepM" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Events are mix of diffirent things, where Save Game module is the best of them.</p>
+      <p>All of them should be executed by trigger (Don't have to be).</p>
+      <p>Heres list of all Events Modules:</p>
+      <ul>
+        <li>Date - Allows you to change date (Year, Month, Day, Hour, Minute).</li>
+        <li>Generic Radio Message - Same as Audio Module <a href="#audio">here</a>.</li>
+        <li>Radio Chat - Lets you say custom written message (To group, side, global).</li>
+        <li>Save Game - Lets you save game, great if you don't want to loose progress.</li>
+        <li>Volume - Allows you to set diffirent types of sounds to 0-1 range of levels.</li>
+      </ul>
+      <hr class="new1">
+      <h1 id="intel">Intel</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0MJH5gcMKCk" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Intel Modules allow you to create nicely looking missions with diffirent tasks and also allow you to write in
+        your diary.</p>
+      <p>Types are these ones:</p>
+      <ul>
+        <li>Create Task - Lets you create custom task, location, title, description, icon.</li>
+        <li>Set Task Destination - Sets Destination of synced. Task (Can be on moving target).</li>
+        <li>Set Task Description - Sets Description of synced. Task.</li>
+        <li>Set Task State - Sets State of synced. Task.</li>
+        <li>Create Diary Record - Lets you write info about mission, target, etc..</li>
+      </ul>
+      <p>How to set-up:
+      </p>
+      <ol>
+        <li>Open your Systems: Modules: Intel.</li>
+        <li>Select module "Create Task" and place it on the ground.</li>
+        <li>You can tweak some Attributes, but that's all you've got to do.</li>
+      </ol>
+      <hr class="new1">
+      <h1 id="anim">Keyframe Animation</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OS7s-Ir0Op0" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Keyframe Animation lets you animate object and camera movement.</p>
+      <p>Camera can be focused at set object, for that to happen you would need to get the objects Eden ID and Variable
+        Name, you can get the ID by having the object selected and in the console (Can be opened by ~) typing
+        <code>get3DENEntityID(get3DENSelected "object" select 0)</code>.</p>
+      <p>For animation camera movement there better thing (For me) <a href="">here</a>.</p>
+      <p>How to set up:</p>
+      <ol>
+        <li>Open your Systems: Modules: Keyframe Animation.</li>
+        <li>There are three crutial modules that you need to have: "Rich Curve", "Timeline" and at least two times "Rich
+          Curve Key".</li>
+        <li>Modules "Timeline" and both "Rich Curve Keys" sync. to the "Rich Curve".</li>
+        <li>In "Rich Curve Keys" Attributes, you need to set the time 0-inf. the smallest number goes first.</li>
+        <li>The object you want to Animate you need to sync. to the "Rich Curve" module.</li>
+      </ol>
+      <hr class="new1">
+      <h1 id="multi">Multiplayer</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cbh-0WIeRbQ" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Multiplayer modules allows you to respawn certain things after they've been destroyed.</p>
+      <p>Respawn position can be also made by command previously mentioned: <code>respawn west</code>.</p>
+      <p>I won't be counting "Sectors" as Multiplayer modules, you will find more on them <a
+          href="../c/index.html#sector">here</a>.</p>
+
+      <p>These modules contain:</p>
+      <ul>
+        <li>Respawn Position - Allows players to respawn at set position when they die (Only in multiplayer if respawn
+          is allowed).</li>
+        <li>Vehicle Respawn - Synced. vehicles will respawn at set position. (MUST be synced to the module.</li>
+      </ul>
+      <hr class="new1">
+      <h1 id="modi">Object Modifiers</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/URPQMCM-MG4" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Object Modifiers modify existing Assets in the game (Activated by a trigger).
+      </p>
+      <p>There are many modules in this category, here's the list of them:</p>
+      <ul>
+        <li>Add Rating / Score - Add points to the Side / Unit</li>
+        <li>Open / Close Doors - Opens and Closes doors.</li>
+        <li>Set AI Mode - Changes Units capabilities</li>
+        <li>Set Ammo - Sets Units / Vehicles Ammo.</li>
+        <li>Set Character Damage - Sets Units Health.</li>
+        <li>Set Mode - Changes Units behaviour.</li>
+        <li>Set Position / Rotation - Sets Assets Position and Rotation.</li>
+        <li>Set Rank - Sets Units rank.</li>
+        <li>Set Skill - Sets Units combat skill.</li>
+        <li>Set Vehicle Damage - Sets Vehicles Health.</li>
+        <li>Set Vehicle Fuel - Sets Vehicles Fuel.</li>
+        <li>Show / Hide - Shows or Hides synced. Assets.</li>
+        <li>Simulation Manager - Adds Enemy Units if player gets close.</li>
+      </ul>
+      <hr class="new1">
+      <h1 id="sceflo">Spawn AI</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AlnY2Ed7YvA" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Spawn AI module does exactly what it's called, it spawns unit of set side in waves (seconds).</p>
+      <p>They are easy to set up, all you need to do is to place them and all the optional modules sync. to the main.
+      </p>
+      <p>There are four Spawn AI modules, I'll expalain them:</p>
+      <ul>
+        <li>Spawn AI - Main module, can spawn AI by it self.</li>
+        <li>Spawn AI: Options - This module changes how long it takes for the spawned bodies to despawn.</li>
+        <li>Spawn AI: Sector Tactic - This module makes spawned AI fight for the sectors in Sector Control gamemode,
+          more on that <a href="../c/index.html#sector">here</a>.</li>
+        <li>Spawn AI: Spawnpoint - Spawnpoint for the AI.</li>
+      </ul>
+      <hr class="new1">
+      <h1 id="site">Sites</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_xnlRPkWKps" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Sites spawn set number of units/mines inside the designated area of any faction.</p>
+      <p>They don't need any Triggers or Preperation for it to work, just place it and it's done.</p>
+      <p>Main types are these:</p>
+      <ul>
+        <li>SIDE Sites - Spawn units of selected side.</li>
+        <li>Animal Sites - Spawn selected type of animals (Dogs, sheep, etc.).</li>
+        <li>Minefield - Places selected type of mines in the area.</li>
+      </ul>
+      <hr class="new1">
+      <h1 id="strat">Strategic</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1sS98hDTFzw" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Strategic module let's you make big scale missions (like those official one on Altis).</p>
+      <p>And they're also not that hard to set up:</p>
+      <ol>
+        <li>Open your Systems: Modules: Strategic.</li>
+        <li>You'll find three main modules: Strategic Map, Open Strategic Map and Mission. Place them on the ground.
+        </li>
+        <li>Open Strategic Map and Mission sync. to the Strategic Map. Also Open Strategic Map sync. to the player.</li>
+        <li>Tweak the Mission Attributes and you're done.</li>
+      </ol>
+      <hr class="new1">
+      <h1 id="sup">Support</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6UHwYodCc-o" frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Support modules allows you to call for a Artillery/Air support at any designation and at any time.</p>
+      <p>There are two main types of Support:</p>
+      <ul>
+        <li>Virtual - Virtual Support allows you to call in for support even if there's no physical support on the map.
+        </li>
+        <li>Normal - You must have this support linked with an actual physical Artillery/Aircraft.</li>
+      </ul>
+      <p>How to set up:</p>
+      <ol>
+        <li>Open your Systems: Modules: Support.</li>
+        <li>Select the "Support Requester" and sync. it with playable character.</li>
+        <li>Select any type of Support from the modules and place it down.</li>
+        <li>Sync. the selected module to the "Support Requester" (If not virtual, must be synced with physical support
+          unit).</li>
+        <li>Start the game and call for the support, done.</li>
+      </ol>
+      <hr class="new1">
+      <div class="center">
+        <div class="pagination">
+          <a href="../a/index.html">1</a>
+          <a href="#civil" class="active">2</a>
+          <a href="../c/index.html">3</a>
+        </div>
+      </div>
+      <hr class="new1">
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="../js/navbar.js"></script>
+</body>
+
+</html>
