@@ -246,9 +246,11 @@ iframe {
     padding-bottom: 10px;
 }
 
-.col{
-    border: #111 1px solid;
+.col-xl-4{
+    border: #111 3px solid;
+    background-color: rgba(25, 25, 25, 0.85);
 }
+
 
 @media only screen and (max-width: 1080px) {
     .page {
