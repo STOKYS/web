@@ -94,20 +94,48 @@
       <hr class="new1">
     </div>
   </div>
+  
   <div class="main" style="background-image: url(../img/background3.png)">
     <div class="page">
       <hr class="new1">
       <h1 id="intro">Introduction</h1>
+      <p>Here we are going to show you how to do Arma 3 scripting.</p>
       <p></p>
       <hr class="new1">
       <h1 id="basic">Basics of Scripting</h1>
       <p></p>
       <hr class="new1">
-      <h1 id="init">Fine init.sqf</h1>
-      <p></p>
+      <h1 id="init">Event Scripts</h1>
+      <p>Event Scripts are scripts executed upon specific events.</p>
+      <p>There are many types of events:</p>
+      <ol>
+        <li>init scripts
+          <ul>
+            <li>init.sqf - Script will be executed when mission starts.</li>
+            <li>initServer.sqf - Script will be executed when server mission starts.</li>
+            <li>init3DEN.sqf - Script will be executed when loading scenario in Eden Editor.</li>
+            <li>initIntro.sqf - Script will be executed when intro or outro starts.</li>
+            <li>initPlayerLocal.sqf - Script will be executed when player joins mission.</li>
+          </ul>
+        </li>
+        <li>Player scripts
+          <ul>
+            <li>onPlayerKilled.sqf - Script will be executed when player gets killed.</li>
+            <li>onPlayerRespawn.sqf - Script will be executed when player respawns.</li>
+          </ul>
+        </li>
+        <li>other scripts
+          <ul>
+            <li>exit.sqf - Script will be executed when mission is finished (before debriefing).</li>
+            <li>pauseOnLoad.sqf - Script will be executed when pause menu is activated.</li>
+          </ul>
+        </li>
+      </ol>
       <hr class="new1">
       <h1 id="desc">File description.ext</h1>
-      <p></p>
+      <p>The Description.ext is used to set the overall mission attributes or to define global entites that will be
+        available for other scripts. It is placed in the mission root folder and uses the same syntax as the config.cpp
+        file, but supports only a limited number of config classes.</p>
       <hr class="new1">
       <div class="center">
         <div class="pagination">

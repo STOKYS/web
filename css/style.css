@@ -87,6 +87,13 @@ h2 {
     padding-left: 20px;
 }
 
+h3{
+    color: #646464;
+    font-family: purista, sans-serif;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
 p {
     padding-top: 20px;
     padding-left: 20px;
@@ -246,11 +253,43 @@ iframe {
     padding-bottom: 10px;
 }
 
-.col-xl-4{
+.col-xl-12{
     border: #111 3px solid;
     background-color: rgba(25, 25, 25, 0.85);
 }
 
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top:0;
+    width: 0%;
+  }
+
+  .accordion {
+    background-color: rgba(20, 20, 20, 0.5);
+    color: rgb(160, 160, 160);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    font-family: purista, sans-serif;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(0, 0, 0); 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: rgba(40, 40, 40, .8);
+    overflow: hidden;
+  }
 
 @media only screen and (max-width: 1080px) {
     .page {
@@ -285,6 +324,44 @@ iframe {
     p {
         padding-left: 10px;
     }
-    
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top:0;
+        width: 100%;
+        z-index: 9999;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .topnav a:hover {
+        background-color: rgb(172, 172, 172);
+        color: black;
+      }
+      
+      .active {
+        background-color: #252525;
+        color: white;
+      }
 
 }

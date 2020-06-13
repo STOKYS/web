@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -96,146 +97,207 @@
         <hr class="new1">
       </div>
     </div>
+    
+    <div class="topnav">
+      <a href="#home" class="active">HOME</a>
+      <div id="myLinks">
+          <button class="dropdown-btn"><i class="fa fa-caret-down"></i>BASICS</button>
+          <div class="dropdown-container">
+            <hr class="new1">
+            <a href="../aa/index.html#intro">Introduction</a>
+            <hr class="new1">
+            <a href="../aa/index.html#eden">Eden Editor</a>
+            <a href="../aa/index.html#params">Mission Parameters</a>
+            <a href="../aa/index.html#obj">Assets</a>
+            <a href="../aa/index.html#trigg">Triggers</a>
+            <a href="../aa/index.html#modul">Modules</a>
+            <hr class="new1">
+            <a href="../ab/index.html#civil">Ambient</a>
+            <a href="../ab/index.html#audio">Audio</a>
+            <a href="../ab/index.html#effect">Effects</a>
+            <a href="../ab/index.html#envi">Enviroment</a>
+            <a href="../ab/index.html#event">Events</a>
+            <a href="../ab/index.html#intel">Intel</a>
+            <a href="../ab/index.html#anim">Keyframe Animation</a>
+            <a href="../ab/index.html#multi">Multiplayer</a>
+            <a href="../ab/index.html#modi">Object Modifiers</a>
+            <a href="../ab/index.html#livef">Live Feed</a>
+            <a href="../ab/index.html#sceflo">Scenario Flow</a>
+            <a href="../ab/index.html#site">Sites</a>
+            <a href="../ab/index.html#strat">Strategic</a>
+            <a href="../ab/index.html#sup">Support</a>
+            <hr class="new1">
+            <a href="../ac/index.html#combat">Combat Patrol</a>
+            <a href="../ac/index.html#vang">Vanguard</a>
+            <a href="../ac/index.html#end">End Game</a>
+            <a href="../ac/index.html#race">Race</a>
+            <a href="../ac/index.html#old">Old Man</a>
+            <a href="../ac/index.html#sector">Sector Control</a>
+            <a href="../ac/index.html#warl">Warlords</a>
+            <a href="../ac/index.html#zeus">Zeus</a>
+            <hr class="new1">
+          </div>
+          <button class="dropdown-btn"><i class="fa fa-caret-down"></i>ADVANCED</button>
+          <div class="dropdown-container">
+            <hr class="new1">
+            <a href="../ba/index.html#intro">Introduction</a>
+            <hr class="new1">
+            <a href="../ba/index.html#basic">Basics of Scripting</a>
+            <a href="../ba/index.html#init">Event Scripts</a>
+            <a href="../ba/index.html#desc">File description.ext</a>
+            <hr class="new1">
+            <a href="../bb/index.html#debrief">CfgDebriefing</a>
+            <a href="../bb/index.html#respawninv">CfgRespawnInventory</a>
+            <a href="../bb/index.html#music">CfgMusic</a>
+            <a href="../bb/index.html#keys">keys</a>
+            <a href="../bb/index.html#params">params</a>
+            <hr class="new1">
+            <a href="../bc/index.html#var">Variables</a>
+            <hr class="new1">
+        
+          </div>
+          <button class="dropdown-btn"><i class="fa fa-caret-down"></i>HOW TO</button>
+          <div class="dropdown-container">
+            <hr class="new1">
+            <a href="#">Sector Control</a>
+            <a href="#">Halo jump</a>
+            <a href="#"></a>
+            <hr class="new1">
+          </div>
+        <button class="dropdown-btn"><i class="fa fa-caret-down"></i>INFO</button>
+      <div class="dropdown-container">
+        <hr class="new1">
+        <a href="../e/index.html#web">Website</a>
+        <a href="../e/index.html#arma">Arma 3</a>
+        <a href="../e/index.html#bis">Bohemia Interactive</a>
+        <hr class="new1">
+      </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
     <div class="main" style="background-image: url(img/background1.jpg);">
       <div class="page">
         <hr class="new1">
         <h1>Arma 3 Scripting Guide</h1>
+        <hr class="new1">
         <h2>Basics</h2>
-        <div class="row">
-          <div class="col-xl-4">
-            <h2>Introduction</h2>
-            <section style="display: none;">
-              <p>Git je verzovací systém, který využívají především vývojáři k efektivní správě svých projektů. Git
-                umožňuje
-                nejen ukládat celou strukturu projektu (adresáře a soubory),
-                ale zároveň dovoluje zaznamenávat každou podstatnou změnu - tedy různé verze projektu. Na projektu může
-                současně pracovat více lidí a větší projekty mohou být rozděleny do dílčích úloh,
-                které jsou ve verzovacím systému označovány jako větve - branches. Ty lze v případě potřeby slučovat s
-                hlavní projektovou větví (tzv. master), ale i členit na další podřízené větve.
-                Git poskytuje dokonalý přehled o celé historii projektu a všech činnostech, které provedli jeho tvůrci.
-              </p>
-              <p>Duchovním otcem Gitu je Linus Torvalds, tvůrce OS Linux a jeden z hlavních programátorů linuxového
-                jádra.
-                Git měl být od svého vzniku (v roce 2005) platformou pro
-                vývojáře open source projektů, která by jim maximálně zjednodušovala práci, nevyžadovala připojení k
-                Internetu a podporovala i nelineární vývoj.</p>
-            </section>
-          </div>
-          <div class="col-xl-4">
-            <h2>Modules</h2>
-            <section style="display: none;">
-              <p>Git je verzovací systém, který využívají především vývojáři k efektivní správě svých projektů. Git
-                umožňuje
-                nejen ukládat celou strukturu projektu (adresáře a soubory),
-                ale zároveň dovoluje zaznamenávat každou podstatnou změnu - tedy různé verze projektu. Na projektu může
-                současně pracovat více lidí a větší projekty mohou být rozděleny do dílčích úloh,
-                které jsou ve verzovacím systému označovány jako větve - branches. Ty lze v případě potřeby slučovat s
-                hlavní projektovou větví (tzv. master), ale i členit na další podřízené větve.
-                Git poskytuje dokonalý přehled o celé historii projektu a všech činnostech, které provedli jeho tvůrci.
-              </p>
-              <p>Duchovním otcem Gitu je Linus Torvalds, tvůrce OS Linux a jeden z hlavních programátorů linuxového
-                jádra.
-                Git měl být od svého vzniku (v roce 2005) platformou pro
-                vývojáře open source projektů, která by jim maximálně zjednodušovala práci, nevyžadovala připojení k
-                Internetu a podporovala i nelineární vývoj.</p>
-            </section>
-          </div>
-          <div class="col-xl-4">
-            <h2>Gamemodes</h2>
-            <section style="display: none;">
-              <p>Git je verzovací systém, který využívají především vývojáři k efektivní správě svých projektů. Git
-                umožňuje
-                nejen ukládat celou strukturu projektu (adresáře a soubory),
-                ale zároveň dovoluje zaznamenávat každou podstatnou změnu - tedy různé verze projektu. Na projektu může
-                současně pracovat více lidí a větší projekty mohou být rozděleny do dílčích úloh,
-                které jsou ve verzovacím systému označovány jako větve - branches. Ty lze v případě potřeby slučovat s
-                hlavní projektovou větví (tzv. master), ale i členit na další podřízené větve.
-                Git poskytuje dokonalý přehled o celé historii projektu a všech činnostech, které provedli jeho tvůrci.
-              </p>
-              <p>Duchovním otcem Gitu je Linus Torvalds, tvůrce OS Linux a jeden z hlavních programátorů linuxového
-                jádra.
-                Git měl být od svého vzniku (v roce 2005) platformou pro
-                vývojáře open source projektů, která by jim maximálně zjednodušovala práci, nevyžadovala připojení k
-                Internetu a podporovala i nelineární vývoj.</p>
-            </section>
-          </div>
 
-        </div>
-        <h2>Advanced</h2>
         <div class="row">
-          <div class="col-xl-4">
-            <h2>Introduction</h2>
-            <section style="display: none;">
-              <p>Git je verzovací systém, který využívají především vývojáři k efektivní správě svých projektů. Git
-                umožňuje
-                nejen ukládat celou strukturu projektu (adresáře a soubory),
-                ale zároveň dovoluje zaznamenávat každou podstatnou změnu - tedy různé verze projektu. Na projektu může
-                současně pracovat více lidí a větší projekty mohou být rozděleny do dílčích úloh,
-                které jsou ve verzovacím systému označovány jako větve - branches. Ty lze v případě potřeby slučovat s
-                hlavní projektovou větví (tzv. master), ale i členit na další podřízené větve.
-                Git poskytuje dokonalý přehled o celé historii projektu a všech činnostech, které provedli jeho tvůrci.
-              </p>
-              <p>Duchovním otcem Gitu je Linus Torvalds, tvůrce OS Linux a jeden z hlavních programátorů linuxového
-                jádra.
-                Git měl být od svého vzniku (v roce 2005) platformou pro
-                vývojáře open source projektů, která by jim maximálně zjednodušovala práci, nevyžadovala připojení k
-                Internetu a podporovala i nelineární vývoj.</p>
-            </section>
+          <div class="col-xl-12">
+            <button class="accordion">Introduction</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            </div>
           </div>
-          <div class="col-xl-4">
-            <h2>Description.ext</h2>
-            <section style="display: none;">
-              <p>Git je verzovací systém, který využívají především vývojáři k efektivní správě svých projektů. Git
-                umožňuje
-                nejen ukládat celou strukturu projektu (adresáře a soubory),
-                ale zároveň dovoluje zaznamenávat každou podstatnou změnu - tedy různé verze projektu. Na projektu může
-                současně pracovat více lidí a větší projekty mohou být rozděleny do dílčích úloh,
-                které jsou ve verzovacím systému označovány jako větve - branches. Ty lze v případě potřeby slučovat s
-                hlavní projektovou větví (tzv. master), ale i členit na další podřízené větve.
-                Git poskytuje dokonalý přehled o celé historii projektu a všech činnostech, které provedli jeho tvůrci.
-              </p>
-              <p>Duchovním otcem Gitu je Linus Torvalds, tvůrce OS Linux a jeden z hlavních programátorů linuxového
-                jádra.
-                Git měl být od svého vzniku (v roce 2005) platformou pro
-                vývojáře open source projektů, která by jim maximálně zjednodušovala práci, nevyžadovala připojení k
-                Internetu a podporovala i nelineární vývoj.</p>
-            </section>
+          <div class="col-xl-12">
+            <button class="accordion">Modules</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            </div>
           </div>
-          <div class="col-xl-4">
-            <h2>Scripts</h2>
-            <section style="display: none;">
-              <p>Git je verzovací systém, který využívají především vývojáři k efektivní správě svých projektů. Git
-                umožňuje
-                nejen ukládat celou strukturu projektu (adresáře a soubory),
-                ale zároveň dovoluje zaznamenávat každou podstatnou změnu - tedy různé verze projektu. Na projektu může
-                současně pracovat více lidí a větší projekty mohou být rozděleny do dílčích úloh,
-                které jsou ve verzovacím systému označovány jako větve - branches. Ty lze v případě potřeby slučovat s
-                hlavní projektovou větví (tzv. master), ale i členit na další podřízené větve.
-                Git poskytuje dokonalý přehled o celé historii projektu a všech činnostech, které provedli jeho tvůrci.
-              </p>
-              <p>Duchovním otcem Gitu je Linus Torvalds, tvůrce OS Linux a jeden z hlavních programátorů linuxového
-                jádra.
-                Git měl být od svého vzniku (v roce 2005) platformou pro
-                vývojáře open source projektů, která by jim maximálně zjednodušovala práci, nevyžadovala připojení k
-                Internetu a podporovala i nelineární vývoj.</p>
-            </section>
+          <div class="col-xl-12">
+            <button class="accordion">Gamemodes</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            </div>
           </div>
-
         </div>
         <hr class="new1">
+        <h2>Advanced</h2>
+        <div class="row">
+          <div class="col-xl-12">
+            <button class="accordion">Introduction</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            </div>
+
+          </div>
+          <div class="col-xl-12">
+            <button class="accordion">Configuration</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            </div>
+          </div>
+            <div class="col-xl-12">
+              <button class="accordion">Scripts</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+
+          </div>
+          <hr class="new1">
+          <h2>How To</h2>
+          <div class="row">
+            <div class="col-xl-12">
+
+            </div>
+            <div class="col-xl-12">
+
+            </div>
+            <div class="col-xl-12">
+
+            </div>
+
+          </div>
+          <hr class="new1">
+          <h2>Info</h2>
+          <div class="row">
+            <div class="col-xl-12">
+              <button class="accordion">This Webpage</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <div class="col-xl-12">
+              <button class="accordion">ArmA 3</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <div class="col-xl-12">
+              <button class="accordion">Bohemia Interactive</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+
+          </div>
+          <hr class="new1">
+        </div>
       </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="js/navbar.js"></script>
-    <script src="js/selector.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+      </script>
+      <script src="js/navbar.js"></script>
+      <script src="js/selection.js"></script>
   </body>
 
 </html>
