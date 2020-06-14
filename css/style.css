@@ -134,6 +134,10 @@ p {
     font-family: purista, sans-serif;
 }
 
+body{
+    width: 100%;
+}
+
 .tuttype1 {
     float: right;
     margin-left: 20px;
@@ -266,6 +270,11 @@ iframe {
     width: 0%;
   }
 
+  .row{
+      width: 100% !important;
+      margin: 0px !important;
+  }
+
   .accordion {
     background-color: rgba(20, 20, 20, 0.5);
     color: rgb(160, 160, 160);
@@ -290,6 +299,25 @@ iframe {
     background-color: rgba(40, 40, 40, .8);
     overflow: hidden;
   }
+
+  .codetab{
+      background-color: rgba(80, 80, 80, .25);
+      border: #111 5px solid;
+      width: 50%;
+  }
+
+  .codeclass {
+    color: #008000;
+  }
+
+  .codecfg {
+    color: #6868fc;
+  }
+
+  .codenor{
+    color: white;
+  }
+
 
 @media only screen and (max-width: 1080px) {
     .page {
@@ -363,5 +391,11 @@ iframe {
         background-color: #252525;
         color: white;
       }
+
+      .codetab{
+        background-color: rgba(80, 80, 80, .25);
+        border: #111 5px solid;
+        width: 100%;
+    }
 
 }

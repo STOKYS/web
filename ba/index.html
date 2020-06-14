@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>Arma 3 Scripting Guide - Basics (Page 1)</title>
+  <title>Arma 3 Scripting Guide - Advanced (Page 1)</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="../img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
@@ -24,7 +25,6 @@
       <a href="../aa/index.html#eden">Eden Editor</a>
       <a href="../aa/index.html#params">Mission Parameters</a>
       <a href="../aa/index.html#obj">Assets</a>
-      <hr class="new1">
       <a href="../aa/index.html#trigg">Triggers</a>
       <a href="../aa/index.html#modul">Modules</a>
       <hr class="new1">
@@ -45,8 +45,6 @@
       <hr class="new1">
       <a href="../ac/index.html#combat">Combat Patrol</a>
       <a href="../ac/index.html#vang">Vanguard</a>
-      <a href="../ac/index.html#end">End Game</a>
-      <a href="../ac/index.html#race">Race</a>
       <a href="../ac/index.html#old">Old Man</a>
       <a href="../ac/index.html#sector">Sector Control</a>
       <a href="../ac/index.html#warl">Warlords</a>
@@ -59,30 +57,35 @@
       <a href="../ba/index.html#intro">Introduction</a>
       <hr class="new1">
       <a href="../ba/index.html#basic">Basics of Scripting</a>
-      <hr class="new1">
-      <a href="../ba/index.html#init">File init.sqf</a>
+      <a href="../ba/index.html#init">Event Scripts</a>
       <a href="../ba/index.html#desc">File description.ext</a>
       <hr class="new1">
       <a href="../bb/index.html#debrief">CfgDebriefing</a>
-      <a href="../bb/index.html#debriefsec">CfgDebriefingSections</a>
       <a href="../bb/index.html#respawninv">CfgRespawnInventory</a>
-      <a href="../bb/index.html#roles">CfgRoles</a>
       <a href="../bb/index.html#music">CfgMusic</a>
-      <a href="../bb/index.html#respawntemp">respawnTemplates</a>
-      <a href="../bb/index.html#respawnweap">respawnWeapons</a>
-      <a href="../bb/index.html#respawnmag">respawnMagazines</a>
       <a href="../bb/index.html#keys">keys</a>
       <a href="../bb/index.html#params">params</a>
       <hr class="new1">
-
+      <a href="../bc/index.html#var">Variables</a>
+      <a href="../bc/index.html#addass">Spawning Assets</a>
+      <a href="../bc/index.html#remass">Removing Assets</a>
+      <a href="../bc/index.html#cam">Camera</a>
+      <a href="../bc/index.html#anim">Animations</a>
+      <a href="../bc/index.html#remtrigg">Removing triggers</a>
+      <a href="../bc/index.html#hint">Hint</a>
+      <a href="../bc/index.html#tele">Teleportation</a>
+      <a href="../bc/index.html#action">Custom Actions</a>
       <hr class="new1">
-
     </div>
     <button class="dropdown-btn"><i class="fa fa-caret-down"></i>HOW TO</button>
     <div class="dropdown-container">
-      <a href="#">Introduction</a>
-      <a href="#">Triggers</a>
-      <a href="#">Modules</a>
+      <hr class="new1">
+      <a href="../c/index.html#sector">Sector Control</a>
+      <a href="../c/index.html#halo">Halo jump</a>
+      <a href="../c/index.html#buying">Buying Weapons/Vehicles</a>
+      <a href="../c/index.html#ass">Assassination Mission</a>
+      <a href="../c/index.html#hos">Hostage Rescue</a>
+      <hr class="new1">
     </div>
     <hr class="new1">
     <button class="dropdown-btn"><i class="fa fa-caret-down"></i>INFO</button>
@@ -95,15 +98,106 @@
     </div>
   </div>
   
+  
+  
+  <div class="topnav">
+    <a href="../index.html" class="active">HOME</a>
+    <div id="myLinks">
+      <button class="dropdown-btn"><i class="fa fa-caret-down"></i>BASICS</button>
+      <div class="dropdown-container">
+        <hr class="new1">
+        <a href="../aa/index.html#intro">Introduction</a>
+        <hr class="new1">
+        <a href="../aa/index.html#eden">Eden Editor</a>
+        <a href="../aa/index.html#params">Mission Parameters</a>
+        <a href="../aa/index.html#obj">Assets</a>
+        <a href="../aa/index.html#trigg">Triggers</a>
+        <a href="../aa/index.html#modul">Modules</a>
+        <hr class="new1">
+        <a href="../ab/index.html#civil">Ambient</a>
+        <a href="../ab/index.html#audio">Audio</a>
+        <a href="../ab/index.html#effect">Effects</a>
+        <a href="../ab/index.html#envi">Enviroment</a>
+        <a href="../ab/index.html#event">Events</a>
+        <a href="../ab/index.html#intel">Intel</a>
+        <a href="../ab/index.html#anim">Keyframe Animation</a>
+        <a href="../ab/index.html#multi">Multiplayer</a>
+        <a href="../ab/index.html#modi">Object Modifiers</a>
+        <a href="../ab/index.html#livef">Live Feed</a>
+        <a href="../ab/index.html#sceflo">Scenario Flow</a>
+        <a href="../ab/index.html#site">Sites</a>
+        <a href="../ab/index.html#strat">Strategic</a>
+        <a href="../ab/index.html#sup">Support</a>
+        <hr class="new1">
+        <a href="../ac/index.html#combat">Combat Patrol</a>
+        <a href="../ac/index.html#vang">Vanguard</a>
+        <a href="../ac/index.html#old">Old Man</a>
+        <a href="../ac/index.html#sector">Sector Control</a>
+        <a href="../ac/index.html#warl">Warlords</a>
+        <a href="../ac/index.html#zeus">Zeus</a>
+        <hr class="new1">
+      </div>
+      <button class="dropdown-btn"><i class="fa fa-caret-down"></i>ADVANCED</button>
+      <div class="dropdown-container">
+        <hr class="new1">
+        <a href="../ba/index.html#intro">Introduction</a>
+        <hr class="new1">
+        <a href="../ba/index.html#basic">Basics of Scripting</a>
+        <a href="../ba/index.html#init">Event Scripts</a>
+        <a href="../ba/index.html#desc">File description.ext</a>
+        <hr class="new1">
+        <a href="../bb/index.html#debrief">CfgDebriefing</a>
+        <a href="../bb/index.html#respawninv">CfgRespawnInventory</a>
+        <a href="../bb/index.html#music">CfgMusic</a>
+        <a href="../bb/index.html#keys">keys</a>
+        <a href="../bb/index.html#params">params</a>
+        <hr class="new1">
+        <a href="../bc/index.html#var">Variables</a>
+        <a href="../bc/index.html#addass">Spawning Assets</a>
+        <a href="../bc/index.html#remass">Removing Assets</a>
+        <a href="../bc/index.html#cam">Camera</a>
+        <a href="../bc/index.html#anim">Animations</a>
+        <a href="../bc/index.html#remtrigg">Removing Triggers</a>
+        <a href="../bc/index.html#hint">Hint</a>
+        <a href="../bc/index.html#tele">Teleportation</a>
+        <a href="../bc/index.html#action">Custom Actions</a>
+        <hr class="new1">
+      </div>
+      <button class="dropdown-btn"><i class="fa fa-caret-down"></i>HOW TO</button>
+      <div class="dropdown-container">
+        <hr class="new1">
+        <a href="../c/index.html#sector">Sector Control</a>
+        <a href="../c/index.html#halo">Halo jump</a>
+        <a href="../c/index.html#buying">Buying Weapons/Vehicles</a>
+        <a href="../c/index.html#ass">Assassination Mission</a>
+        <a href="../c/index.html#hos">Hostage Rescue</a>
+        <hr class="new1">
+      </div>
+      <button class="dropdown-btn"><i class="fa fa-caret-down"></i>INFO</button>
+      <div class="dropdown-container">
+        <hr class="new1">
+        <a href="../e/index.html#web">Website</a>
+        <a href="../e/index.html#arma">Arma 3</a>
+        <a href="../e/index.html#bis">Bohemia Interactive</a>
+        <hr class="new1">
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
   <div class="main" style="background-image: url(../img/background3.png)">
     <div class="page">
       <hr class="new1">
       <h1 id="intro">Introduction</h1>
-      <p>Here we are going to show you how to do Arma 3 scripting.</p>
+      <p>I this part we are going to show you how to do Arma 3 scripting.</p>
+      <p>From the simple Basics to really complicated Scripts.</p>
       <p></p>
       <hr class="new1">
       <h1 id="basic">Basics of Scripting</h1>
-      <p></p>
+      <p>Arma 3 uses ASL (Arma Scripting Language) scripting language, it's a case sensitive C-style scripting language
+        compiled to SQF. ASL is intended to simplify Arma 3 mod and mission development and eliminate the pain of SQF's
+        bad syntax.</p>
       <hr class="new1">
       <h1 id="init">Event Scripts</h1>
       <p>Event Scripts are scripts executed upon specific events.</p>
