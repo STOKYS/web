@@ -188,57 +188,75 @@
     <div class="page">
       <hr class="new1">
       <h1 id="var">Variables</h1>
+      <p>A variable is a "storage container" or "named placeholder" for data. You can read and modify the data once this
+        container is created.
+        Its "name" is referenced as Identifier.</p>
       <p>There are two types of variables:</p>
       <ol>
         <li>
-          Local Variables -
+          Local Variables - Variables only existing in one object.
         </li>
         <li>
-          Global Variables -
+          Global Variables - Variables existing all over the mission (Made with underscore before it "_var").
         </li>
       </ol>
+      <h2>Initialization</h2>
+      <p>The first thing to do to create a variable is to find its name, also called identifier; this name must be
+        speaking to the reader - keep in mind that code is meant to be read by human beings (see Code Best Practices -
+        Variable format).</p>
+        <div class="codetab">
+          <code class="codeclass">myVariable =</code><code>4</code>
+        </div>
+        <h2>Deletion</h2>
+      <p>Once created, variables take up space in the computer's memory.
+        This is not drastic for small variables, but if a big number of very large variables is used, it is recommended to undefine the unneeded ones in order to free up memory.</p>
+        <div class="codetab">
+          <code class="codeclass">myVariable =</code><code>nil</code>
+        </div>
       <hr class="new1">
       <h1 id="addass">Spawning Assets</h1>
       <p>There are also two main types of Spawning Assets:</p>
       <ol>
-        <li>Spawning on the Map</li>
-        <p>For that, the best command is <code>createVehicle</code>, that allows you to spawn number of assets on the
-          map.</p>
+        <li>Spawning on the Map
+          <p>For that, the best command is <code>createVehicle</code>, that allows you to spawn number of assets on the
+            map.</p>
 
-        <p>1st. Syntax:</p>
-        <p><code>assetName <b>createVehicle</b> position</code></p>
-        <ul>
-          <li>assetName - Name of the asset (Can be found when clicking on the asset).</li>
-          <li>position - Position where the asset will be placed (Can be: [x, y, z] or marker pos: <code>getMarkerPos
-              markerName</code>.</li>
-        </ul>
-        <div class="codetab">
-          <code class="codenor">B_Sniper_F</code><code>createVehicle</code><code class="codenor">[784.8, 87.0,
-            9.7896]</code>
-        </div>
-        <p>2nd. Syntax:</p>
-        <p><code><b>createVehicle</b> [assetName, position, placement]</code></p>
-        <ul>
-          <li>assetName - Name of the asset (Can be found when clicking on the asset).</li>
-          <li>position - Position where the asset will be placed (Can be: [x, y, z] or marker pos: <code>getMarkerPos
-              markerName</code>, or even in the set radius of marker: <code></code>.</li>
-          <li>placement - (Optional) Place in set radius, needs to be combined with position.</li>
-        </ul>
-        <div class="codetab">
-          <code>createVehicle</code><code class="codenor">[B_Sniper_F, getMarkerPos ["marker1", "marker2"], 4];</code>
-        </div>
-        <br><br><br>
-        <li>Adding Items to Inventory</li>
-        <p>With command: <code>addItem</code> you are able to add item to the inventory of any unit.</p>
-        <p>Syntax:</p>
-        <p><code>unit <b>addItem</b> "item"</code></p>
-        <ul>
-          <li>unit - Unit that will recieve the item .</li>
-          <li>"item" - Item that will be added to the unit.</li>
-        </ul>
-        <div class="codetab">
-          <code class="codenor">player</code><code>addItem</code><code class="codenor">"NVGoggles"</code>
-        </div>
+          <p>1st. Syntax:</p>
+          <p><code>assetName <b>createVehicle</b> position</code></p>
+          <ul>
+            <li>assetName - Name of the asset (Can be found when clicking on the asset).</li>
+            <li>position - Position where the asset will be placed (Can be: [x, y, z] or marker pos: <code>getMarkerPos
+                markerName</code>.</li>
+          </ul>
+          <div class="codetab">
+            <code class="codenor">B_Sniper_F</code><code>createVehicle</code><code class="codenor">[784.8, 87.0,
+              9.7896]</code>
+          </div>
+          <p>2nd. Syntax:</p>
+          <p><code><b>createVehicle</b> [assetName, position, placement]</code></p>
+          <ul>
+            <li>assetName - Name of the asset (Can be found when clicking on the asset).</li>
+            <li>position - Position where the asset will be placed (Can be: [x, y, z] or marker pos: <code>getMarkerPos
+                markerName</code>, or even in the set radius of marker: <code></code>.</li>
+            <li>placement - (Optional) Place in set radius, needs to be combined with position.</li>
+          </ul>
+          <div class="codetab">
+            <code>createVehicle</code><code class="codenor">[B_Sniper_F, getMarkerPos ["marker1", "marker2"], 4];</code>
+          </div>
+          <br><br><br>
+        </li>
+        <li>Adding Items to Inventory
+          <p>With command: <code>addItem</code> you are able to add item to the inventory of any unit.</p>
+          <p>Syntax:</p>
+          <p><code>unit <b>addItem</b> "item"</code></p>
+          <ul>
+            <li>unit - Unit that will recieve the item .</li>
+            <li>"item" - Item that will be added to the unit.</li>
+          </ul>
+          <div class="codetab">
+            <code class="codenor">player</code><code>addItem</code><code class="codenor">"NVGoggles"</code>
+          </div>
+        </li>
       </ol>
       <p>Some assets list:</p>
       <div style="overflow-x:auto">
@@ -281,30 +299,31 @@
       <h1 id="remass">Removing Assets</h1>
       <p>There are also two main types of Removing Assets:</p>
       <ol>
-        <li>Removing assets from the map</li>
-        <p>For that, the best command is <code>deleteVehicle</code>, that allows you to remove any assets on the
-          map.</p>
-
-        <p>Syntax:</p>
-        <p><code><b>deleteVehicle</b> unit</code></p>
-        <ul>
-          <li>unit - Asset that will be removed.</li>
-        </ul>
-        <div class="codetab">
-          <code>deleteVehicle</code><code class="codenor">unit4</code>
-        </div>
-        <br><br><br>
-        <li>Removing Items from Inventory</li>
-        <p>With command: <code>removeItem</code> you are able to remove any item from the inventory of any unit.</p>
-        <p>Syntax:</p>
-        <p><code>unit <b>removeItem</b> "item"</code></p>
-        <ul>
-          <li>unit - Unit that will loose the item.</li>
-          <li>"item" - Item that will be removed from the unit.</li>
-        </ul>
-        <div class="codetab">
-          <code class="codenor">player</code><code>removeItem</code><code class="codenor">"NVGoggles"</code>
-        </div>
+        <li>Removing assets from the map
+          <p>For that, the best command is <code>deleteVehicle</code>, that allows you to remove any assets on the
+            map.</p>
+          <p>Syntax:</p>
+          <p><code><b>deleteVehicle</b> unit</code></p>
+          <ul>
+            <li>unit - Asset that will be removed.</li>
+          </ul>
+          <div class="codetab">
+            <code>deleteVehicle</code><code class="codenor">unit4</code>
+          </div>
+          <br><br><br>
+        </li>
+        <li>Removing Items from Inventory
+          <p>With command: <code>removeItem</code> you are able to remove any item from the inventory of any unit.</p>
+          <p>Syntax:</p>
+          <p><code>unit <b>removeItem</b> "item"</code></p>
+          <ul>
+            <li>unit - Unit that will loose the item.</li>
+            <li>"item" - Item that will be removed from the unit.</li>
+          </ul>
+          <div class="codetab">
+            <code class="codenor">player</code><code>removeItem</code><code class="codenor">"NVGoggles"</code>
+          </div>
+        </li>
       </ol>
       <hr class="new1">
       <h1 id="cam">Camera</h1>
