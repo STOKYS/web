@@ -35,6 +35,17 @@ hr.new1 {
     border-top: 1px dashed rgb(100, 100, 100);
 }
 
+.page>hr.new1 {
+    margin: 50px 0px 50px 0px;
+}
+
+.modal-content {
+    background-color: rgba(25, 25, 25, 0.9);
+    color: white;
+    margin-top: 50px;
+    width: 100%;
+}
+
 /* Style the sidenav links and the dropdown button */
 .sidenav a,
 .dropdown-btn {
@@ -87,7 +98,7 @@ h2 {
     padding-left: 20px;
 }
 
-h3{
+h3 {
     color: #646464;
     font-family: purista, sans-serif;
     padding-top: 5px;
@@ -134,7 +145,7 @@ p {
     font-family: purista, sans-serif;
 }
 
-body{
+body {
     width: 100%;
 }
 
@@ -247,7 +258,7 @@ iframe {
     background-color: rgb(75, 75, 75);
 }
 
-.wip{
+.wip {
     background-color: rgba(73, 73, 73, .3);
     color: white;
     width: 80%;
@@ -257,25 +268,29 @@ iframe {
     padding-bottom: 10px;
 }
 
-.col-xl-12{
+.col-xl-12 {
     border: #111 3px solid;
     background-color: rgba(25, 25, 25, 0.85);
 }
 
-  .topnav {
+.codetab>code {
+    padding-left: 15px;
+}
+
+.topnav {
     overflow: hidden;
     background-color: #333;
     position: fixed;
-    top:0;
+    top: 0;
     width: 0%;
-  }
+}
 
-  .row{
-      width: 100% !important;
-      margin: 0px !important;
-  }
+.row {
+    width: 100% !important;
+    margin: 0px !important;
+}
 
-  .accordion {
+.accordion {
     background-color: rgba(20, 20, 20, 0.5);
     color: rgb(160, 160, 160);
     cursor: pointer;
@@ -287,42 +302,58 @@ iframe {
     font-size: 25px;
     transition: 0.4s;
     font-family: purista, sans-serif;
-  }
-  
-  .active, .accordion:hover {
-    background-color: rgb(0, 0, 0); 
-  }
-  
-  .panel {
+}
+
+.active,
+.accordion:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.panel {
     padding: 0 18px;
     display: none;
     background-color: rgba(40, 40, 40, .8);
     overflow: hidden;
-  }
+}
 
-  .codetab{
-      background-color: rgba(80, 80, 80, .25);
-      border: #111 5px solid;
-      width: 50%;
-  }
+.codetab {
+    background-color: rgba(80, 80, 80, .25);
+    border: #111 3px dashed;
+    width: 95%;
+    padding: 10px;
+}
 
-  .codeclass {
+.codeclass {
     color: #008000;
-  }
+}
 
-  .codecfg {
+.codecfg {
     color: #6868fc;
-  }
+}
 
-  .codenor{
+.codenor {
     color: white;
-  }
+}
 
+table,
+tr,
+td,
+th {
+    margin: auto;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+}
+
+th {
+    background-color: rgba(60, 60, 60, 0.5);
+}
 
 @media only screen and (max-width: 1080px) {
     .page {
         width: 100%;
         padding: 0px 5px 0px 5px;
+        height: 100%;
     }
 
     .sidenav {
@@ -334,65 +365,67 @@ iframe {
 
     .main {
         margin-left: 0px;
-        padding-top: 100px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        height: 100%;
     }
 
-    img, iframe{
+    img,
+    iframe {
         width: 100% !important;
     }
 
-    iframe{
+    iframe {
         padding-left: 10px;
     }
 
     h2 {
         padding-left: 5px;
     }
-    
+
     p {
         padding-left: 10px;
     }
-      
-      .topnav {
-        overflow: hidden;
+
+    .topnav {
         background-color: #333;
-        position: fixed;
-        top:0;
+        position: relative;
+        top: 0;
         width: 100%;
         z-index: 9999;
-      }
-      
-      .topnav #myLinks {
+    }
+
+    .topnav #myLinks {
         display: none;
-      }
-      
-      .topnav a {
+    }
+
+    .topnav a {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
         display: block;
-      }
-      
-      .topnav a.icon {
+    }
+
+    .topnav a.icon {
         background: black;
         display: block;
         position: absolute;
         right: 0;
         top: 0;
-      }
-      
-      .topnav a:hover {
+    }
+
+    .topnav a:hover {
         background-color: rgb(172, 172, 172);
         color: black;
-      }
-      
-      .active {
+    }
+
+    .active {
         background-color: #252525;
         color: white;
-      }
+    }
 
-      .codetab{
+    .codetab {
         background-color: rgba(80, 80, 80, .25);
         border: #111 5px solid;
         width: 100%;

@@ -98,9 +98,9 @@
       <hr class="new1">
     </div>
   </div>
-  
-  
-  
+
+
+
   <div class="topnav">
     <a href="index.html" class="active">HOME</a>
     <div id="myLinks">
@@ -188,6 +188,44 @@
     </a>
   </div>
   <div class="main" style="background-image: url(img/background1.jpg);">
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">This page is not done yet</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>We are sorry but this page is still under construction.<br><br>
+              You might find unfinished content or non-functional things.</p>
+            <hr class="new1">
+            <p>If you want to get updates about development of this page you can sign-in here:</p>
+            <div class="form-group">
+              <label for="pwd">Username</label>
+              <input type="text" class="form-control" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="page">
       <hr class="new1">
       <h1>Arma 3 Scripting Guide</h1>
@@ -197,7 +235,9 @@
         <div class="col-xl-12">
           <button class="accordion">Introduction</button>
           <div class="panel">
-            <p>Lorem ipsum</p>
+            <p>
+              Most of the basics here have nothing to do with actual scripting, but offers lots of useful information on
+              mission editing for absolute beginners using Triggers, Modules, etc..</p>
             <ul>
               <li><a href="aa/index.html#intro">Introduction</a></li>
               <li><a href="aa/index.html#eden">Eden Editor</a></li>
@@ -211,7 +251,10 @@
         <div class="col-xl-12">
           <button class="accordion">Modules</button>
           <div class="panel">
-            <p>Lorem ipsum</p>
+            <p>Modules are basically pre-made scripts made into Assets. They are very easy to use even for someone who
+              never wrote a single line of code. So that's why the rest of the page will be talking about individual
+              Modules.
+              Completed with video tutorial/showcase.</p>
             <ul>
               <li><a href="ab/index.html#civil">Ambient</a></li>
               <li><a href="ab/index.html#audio">Audio</a></li>
@@ -233,7 +276,7 @@
         <div class="col-xl-12">
           <button class="accordion">Gamemodes</button>
           <div class="panel">
-            <p>Lorem ipsum</p>
+            <p>Gamemodes are pre-made scripts that make and change missions of the game.</p>
             <ul>
               <li><a href="ac/index.html#combat">Combat Patrol</a></li>
               <li><a href="ac/index.html#vang">Vanguard</a></li>
@@ -251,7 +294,8 @@
         <div class="col-xl-12">
           <button class="accordion">Introduction</button>
           <div class="panel">
-            <p>Lorem ipsum</p>
+            <p>I this part we are going to show you how to do Arma 3 scripting.</p>
+            <p>From the simple Basics to really complicated Scripts.</p>
             <ul>
               <li><a href="ba/index.html#intro">Introduction</a></li>
               <li><a href="ba/index.html#basic">Basics of Scripting</a></li>
@@ -259,12 +303,14 @@
               <li><a href="ba/index.html#desc">File description.ext</a></li>
             </ul>
           </div>
-
         </div>
         <div class="col-xl-12">
           <button class="accordion">Configuration</button>
           <div class="panel">
-            <p>Lorem ipsum</p>
+            <p>Configuration scripts are written into description.ext file</p>
+            <p>The Description.ext is used to set the overall mission attributes or to define global entites that will
+              be available for other scripts. It is placed in the mission root folder and uses the same syntax as the
+              config.cpp file, but supports only a limited number of config classes.</p>
             <ul>
               <li><a href="bb/index.html#debrief">CfgDebriefing</a></li>
               <li><a href="bb/index.html#respawninv">CfgRespawnInventory</a></li>
@@ -277,7 +323,17 @@
         <div class="col-xl-12">
           <button class="accordion">Scripts</button>
           <div class="panel">
-            <p>Lorem ipsum</p>
+            <p>During mission editing and addon editing you may come across situations where actions or features you
+              would like to have in your mission or addon cannot be accomplished using the basic (or even the more
+              advanced) capabilities of the mission editor or within config files (in the case of addons). Some examples
+              of this might be really cinematic cutscenes in missions or special animations for an addon.</p>
+
+            <p>The solution to this is to take advantage of the game-engine's ability to call on an even more advanced
+              feature known as scripting. Arma's scripting language gives you a more direct control of core game
+              features. With any combination of these commands and functions you can create custom processes that meet
+              the specific needs of your mission or addon.</p>
+
+            </p>
             <ul>
               <li><a href="bc/index.html#var">Variables</a></li>
               <li><a href="bc/index.html#addass">Spawning Assets</a></li>
@@ -298,7 +354,7 @@
         <div class="col-xl-12">
           <button class="accordion">How to</button>
           <div class="panel">
-            <p>Lorem ipsum</p>
+            <p>In the How to page we will show you mostly new types of gamemodes.</p>
             <ul>
               <li><a href="../ca/index.html#sector">Sector Control</a></li>
               <li><a href="../ca/index.html#halo">Halo jump</a></li>
@@ -315,11 +371,12 @@
         <div class="col-xl-12">
           <button class="accordion">Info</button>
           <div class="panel">
-            <p>Lorem ipsum.</p>
+            <p>This website was created to help Arma 3 Comunity and make it simpler for them to find information about
+              mission editing / scripting.</p>
             <ul>
-              <li><a href="e/index.html#"></a></li>
-              <li><a href="e/index.html#"></a></li>
-              <li><a href="e/index.html#"></a></li>
+              <li><a href="e/index.html#web">This Website</a></li>
+              <li><a href="e/index.html#arma">Arma 3</a></li>
+              <li><a href="e/index.html#bis">Bohemia Interactive</a></li>
             </ul>
           </div>
         </div>
@@ -338,6 +395,11 @@
   </script>
   <script src="js/navbar.js"></script>
   <script src="js/selection.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $('#myModal').modal('show');
+    });
+  </script>
 </body>
 
 </html>
