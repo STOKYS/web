@@ -31,7 +31,25 @@
     padding-top: 20px;
 }
 
+.refa {
+    padding-left: 80px;
+}
+
+.refa>p {
+    padding-left: 0px;
+    font-size: 30px;
+}
+
 hr.new1 {
+    border-top: 1px dashed rgb(100, 100, 100);
+}
+
+hr.new2 {
+    border-top: 1px dotted rgb(100, 100, 100);
+    margin: 0px 100px 0px 100px;
+}
+
+hr.new3 {
     border-top: 1px dashed rgb(100, 100, 100);
 }
 
@@ -61,6 +79,25 @@ hr.new1 {
     cursor: pointer;
     outline: none;
 }
+
+.form-group{
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.profil {
+    padding: 6px 8px 6px 16px !important;
+    font-size: 20px !important;
+    color: #818181 !important;
+    width: 100% !important;
+}
+
+.profil:hover {
+    color: #f1f1f1 !important;
+    background: none !important;
+}
+
 
 /* On mouse-over */
 .sidenav a:hover,
@@ -350,6 +387,12 @@ th {
 }
 
 @media only screen and (max-width: 1080px) {
+
+    hr.new1 {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .page {
         width: 100%;
         padding: 0px 5px 0px 5px;

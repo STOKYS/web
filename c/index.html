@@ -68,7 +68,6 @@
     <a href="../bc/index.html#var">Variables</a>
     <a href="../bc/index.html#addass">Spawning Assets</a>
     <a href="../bc/index.html#remass">Removing Assets</a>
-    <a href="../bc/index.html#cam">Camera</a>
     <a href="../bc/index.html#anim">Animations</a>
     <a href="../bc/index.html#hint">Hint</a>
     <a href="../bc/index.html#tele">Teleportation</a>
@@ -78,7 +77,6 @@
   <button class="dropdown-btn"><i class="fa fa-caret-down"></i>HOW TO</button>
   <div class="dropdown-container">
     <hr class="new1">
-    <a href="../c/index.html#sector">Sector Control</a>
     <a href="../c/index.html#halo">Halo jump</a>
     <a href="../c/index.html#buying">Buying Weapons/Vehicles</a>
     <a href="../c/index.html#ass">Assassination Mission</a>
@@ -93,6 +91,10 @@
     <a href="../e/index.html#arma">Arma 3</a>
     <a href="../e/index.html#bis">Bohemia Interactive</a>
     <hr class="new1">
+  </div>
+  <div>
+    <a href="../d/index.html" style="bottom: 0; position: absolute; padding-bottom: 20px; z-index: -1;">PROFILE <img
+        src="../img/avatar.png" alt="avatar" style="width: 48px; padding-left: 20px;"></a>
   </div>
 </div>
 
@@ -153,7 +155,6 @@
       <a href="../bc/index.html#var">Variables</a>
       <a href="../bc/index.html#addass">Spawning Assets</a>
       <a href="../bc/index.html#remass">Removing Assets</a>
-      <a href="../bc/index.html#cam">Camera</a>
       <a href="../bc/index.html#anim">Animations</a>
       <a href="../bc/index.html#hint">Hint</a>
       <a href="../bc/index.html#tele">Teleportation</a>
@@ -163,7 +164,6 @@
     <button class="dropdown-btn"><i class="fa fa-caret-down"></i>HOW TO</button>
     <div class="dropdown-container">
       <hr class="new1">
-      <a href="../c/index.html#sector">Sector Control</a>
       <a href="../c/index.html#halo">Halo jump</a>
       <a href="../c/index.html#buying">Buying Weapons/Vehicles</a>
       <a href="../c/index.html#ass">Assassination Mission</a>
@@ -178,6 +178,7 @@
       <a href="../e/index.html#bis">Bohemia Interactive</a>
       <hr class="new1">
     </div>
+    <a href="../d/index.html" class="profil">PROFILE</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -186,17 +187,137 @@
 <div class="main" style="background-image: url(../img/background8.jpg)">
   <div class="page">
     <hr class="new1">
-    <h1 id="sector">Sector Control</h1>
-    <hr class="new1">
     <h1 id="halo">Halo jump</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MGSXjc3fbg8"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>How to set it up:</p>
+    <ol>
+      <li>On any object you want to use as a HALO jump pole write following code:
+        <div class="codetab">
+          <code class="codeclass">this</code><code>addAction</code><code class="codenor">["HALO Jump",</code><code
+            class="codecfg">"halo.sqf"</code><code class="codenor">];</code>
+        </div>
+      </li>
+      <li>In the mission folder create <code>halo.sqf</code> file.</li>
+      <li>Open the file and type:&nbsp;&nbsp;&nbsp;<code>_guy = _this select 1;</code> (That sets player who activated
+        it as _guy).</li>
+      <li>Then type:&nbsp;&nbsp;&nbsp;<code>openMap true;</code> (That
+        opens the map).</li>
+      <li>Then type:&nbsp;&nbsp;&nbsp;<code>onMapSingleClick {};</code> (That adds code that will execute when clicked
+        on the
+        map).</li>
+      <li>Then into the brackets type:&nbsp;&nbsp;&nbsp;<code>_guy setPos _pos; </code> (That teleport player to
+        selected position).</li>
+      <li>Then type in:&nbsp;&nbsp;&nbsp;<code>_alt = 2000; </code> (This
+        sets altitude of the HALO jump).</li>
+      <li>Then type in:&nbsp;&nbsp;&nbsp;<code>[ _guy, _alt ] spawn BIS_fnc_halo; </code> (Activates the HALO
+        function).</li>
+      <li>Then type in:&nbsp;&nbsp;&nbsp;<code>_guy addBackpack "B_Parachute"; </code>(Adds parachute to the player).
+      </li>
+      <li>Then type in:&nbsp;&nbsp;&nbsp;<code>openMap false; </code> (This will close the map).</li>
+      <li>So in the end it will look like this:
+        <div class="codetab">
+          <code class="codeclass">_guy</code><code class="codenor">=</code><code
+            class="codeclass">_this</code><code>select</code><code class="codenor">1;</code><br>
+          <code>openMap</code><code class="codecfg">true;</code><br>
+          <code>onMapSingleClick</code><br>
+          <code class="codenor">{</code><br>
+          <code class="codeclass">&nbsp;&nbsp;&nbsp;_guy</code><code>setPos</code><code
+            class="codeclass">_pos;</code><br>
+          <code class="codeclass">&nbsp;&nbsp;&nbsp;_alt</code><code class="codenor">= 2000;</code><br>
+          <code class="codenor">&nbsp;&nbsp;&nbsp;[</code><code class="codeclass">_guy, _alt</code><code
+            class="codenor">]</code><code>spawn</code><code class="codenor">BIS_fnc_halo;</code><br>
+          <code class="codeclass">&nbsp;&nbsp;&nbsp;_guy</code><code>addBackpack</code><code
+            class="codenor">"B_Parachute";</code><br>
+          <code>&nbsp;&nbsp;&nbsp;openMap</code><code class="codecfg">false;</code><br>
+          <code class="codenor">};</code>
+        </div>
+      </li>
+    </ol>
     <hr class="new1">
     <h1 id="buying">Buying Weapons/Vehicles</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RHhLZL6FpSM"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>How to set it up:</p>
+    <ol>
+      <li>On any object you want to use as a Spawning pole write following code:
+        <div class="codetab">
+          <code class="codeclass">this</code><code>addAction</code><code class="codenor">["Spawn vehicle",</code><code
+            class="codecfg">"car.sqf"</code><code class="codenor">];</code>
+        </div>
+      </li>
+      <li>In the mission folder create <code>car.sqf</code> file.</li>
+      <li>Open the file and type: <code>_guy = _this select 1; </code> (That sets player who activated it as _guy).</li>
+      <li>Then type: <code>if (score_guy>= 100) </code> (That checks if the player have required score).</li>
+      <li>Then type: <code>then {createVehicle ["B_MRAP_01_F", getMarkerPos"carpoint"];} </code> (If yes, vehicle will
+        be created on marker position "carpoint").</li>
+      <li>Then type: <code>else {hint "You don't have enought score (100)"};</code> (If no, hint will be displayed).
+      </li>
+      <li>So in the end it will look like this:
+        <div class="codetab">
+          <code class="codeclass">_guy</code><code class="codenor">=</code><code
+            class="codeclass">_this</code><code>select</code><code class="codenor">1;</code><br>
+          <code class="codecfg">if</code><code class="codenor">(</code><code>score</code><code
+            class="codeclass">_guy</code><code class="codenor">>= 100)</code><br>
+          <code class="codecfg">&nbsp;&nbsp;&nbsp;then</code><code
+            class="codenor">{</code><code>createVehicle</code><code
+            class="codenor">["B_MRAP_01_F",</code><code>getMarkerPos</code><code
+            class="codenor">"carpoint"];}</code><br>
+          <code class="codecfg">&nbsp;&nbsp;&nbsp;else</code><code class="codenor">{</code><code>hint</code><code
+            class="codenor">"You don't have enought score (100)"};</code><br>
+        </div>
+      </li>
+      </li>
+    </ol>
     <hr class="new1">
     <h1 id="ass">Assassination Mission</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_CE6iSigmHo"
       allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>How to set it up:</p>
+    <ol>
+      <li>Create target NPC and name him <code>target</code>.</li>
+      <li>Place down a trigger that will activate when: <code>!alive target</code> (Activates when target is not alive).
+      </li>
+      <li>Open your Systems: Modules: Intel.</li>
+      <li>Place modules "Create Task" and "Set Task State".</li>
+      <li>Sync. "Create Task" to "Set Task State" module.</li>
+      <li>Sync. "Set Task State" to the Trigger.</li>
+      <li>"Set Task State" set state to "Succeded".</li>
+      <li>"Create Task" set position on synced. object and sync it with the target.</li>
+    </ol>
     <hr class="new1">
     <h1 id="hos">Hostage Rescue</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XAX3rIJG-Nw"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>How to set it up:</p>
+    <ol>
+      <li>Create NPC that will be the hostage and name him "hostage".</li>
+      <li>In his Init. field type: <code>this enableSimulation false;</code> (Disables simulation).</li>
+      <li>Then: <code>this switchMove "InBaseMoves_HandsBehindBack1";</code> (Plays animation that will make him put
+        hands behind his back).</li>
+      <li>Then: <code>addAction ["Rescue", "hostage.sqf"];</code> (This will add action that will free him).</li>
+      <li>So it will look like this:
+        <div class="codetab">
+          <code class="codeclass">this</code><code>enableSimulation</code><code class="codecfg">false;</code><br>
+          <code class="codeclass">this</code><code>switchMove</code><code
+            class="codenor">"InBaseMoves_HandsBehindBack1";</code><br>
+          <code class="codeclass">this</code><code>addAction</code><code class="codenor">[ "Rescue",</code><code
+            class="codecfg">"hostage.sqf"</code><code class="codenor">];</code>
+        </div>
+      </li>
+      <li>In the mission folder create <code>hostage.sqf</code> file.</li>
+      <li>Open the file and type: <code>hostage enableSimulation true;</code> (Enables simulation).</li>
+      <li>Then: <code>[hostage] join player;</code> (Hostage will join players team).</li>
+      <li>Then: <code>removeAllActions hostage;</code> (Removes action from the hostage).</li>
+      <li>So it will look like this:
+        <div class="codetab">
+          <code class="codeclass">hostage</code><code>enableSimulation</code><code class="codecfg">true;</code><br>
+          <code class="codenor">[</code><code class="codeclass">hostage</code><code
+            class="codenor">]</code><code>join</code><code class="codeclass">player;</code><br>
+          <code>removeAllActions</code><code class="codeclass">hostage;</code>
+        </div>
+      </li>
+    </ol>
     <hr class="new1">
   </div>
 </div>
