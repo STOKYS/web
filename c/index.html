@@ -248,10 +248,10 @@
       </li>
       <li>In the mission folder create <code>car.sqf</code> file.</li>
       <li>Open the file and type: <code>_guy = _this select 1; </code> (That sets player who activated it as _guy).</li>
-      <li>Then type: <code>if (score_guy>= 100) </code> (That checks if the player have required score).</li>
+      <li>Then type: <code>if (score_guy>= 100) </code> (That checks if the player has required score).</li>
       <li>Then type: <code>then {createVehicle ["B_MRAP_01_F", getMarkerPos"carpoint"];} </code> (If yes, vehicle will
         be created on marker position "carpoint").</li>
-      <li>Then type: <code>else {hint "You don't have enought score (100)"};</code> (If no, hint will be displayed).
+      <li>Then type: <code>else {hint "You don't have enough score (100)"};</code> (If no, a hint will be displayed).
       </li>
       <li>So in the end it will look like this:
         <div class="codetab">
@@ -266,7 +266,6 @@
           <code class="codecfg">&nbsp;&nbsp;&nbsp;else</code><code class="codenor">{</code><code>hint</code><code
             class="codenor">"You don't have enought score (100)"};</code><br>
         </div>
-      </li>
       </li>
     </ol>
     <hr class="new1">
@@ -295,7 +294,7 @@
       <li>In his Init. field type: <code>this enableSimulation false;</code> (Disables simulation).</li>
       <li>Then: <code>this switchMove "InBaseMoves_HandsBehindBack1";</code> (Plays animation that will make him put
         hands behind his back).</li>
-      <li>Then: <code>addAction ["Rescue", "hostage.sqf"];</code> (This will add action that will free him).</li>
+      <li>Then: <code>addAction ["Rescue", "hostage.sqf"];</code> (This will add an action that will free him).</li>
       <li>So it will look like this:
         <div class="codetab">
           <code class="codeclass">this</code><code>enableSimulation</code><code class="codecfg">false;</code><br>

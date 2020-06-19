@@ -191,7 +191,7 @@
       <h1 id="var">Variables</h1>
       <p>A variable is a "storage container" or "named placeholder" for data. You can read and modify the data once this
         container is created.
-        Its "name" is referenced as Identifier.</p>
+        Its "name" is referenced as an Identifier.</p>
       <p>There are two types of variables:</p>
       <ol>
         <li>
@@ -220,7 +220,7 @@
       <p>There are also two main types of Spawning Assets:</p>
       <ol>
         <li>Spawning on the Map
-          <p>For that, the best command is <code>createVehicle</code>, that allows you to spawn number of assets on the
+          <p>For that, the best command is <code>createVehicle</code>, which allows you to spawn a number of assets on the
             map.</p>
 
           <p>1st. Syntax:</p>
@@ -239,8 +239,8 @@
           <ul>
             <li>assetName - Name of the asset (Can be found when clicking on the asset).</li>
             <li>position - Position where the asset will be placed (Can be: [x, y, z] or marker pos: <code>getMarkerPos
-                markerName</code>, or even in the set radius of marker: <code></code>.</li>
-            <li>placement - (Optional) Place in set radius, needs to be combined with position.</li>
+                markerName</code>, or even in the set radius of marker.</li>
+            <li>placement - (Optional) Place in set radius, needs to be combined with the position.</li>
           </ul>
           <div class="codetab">
             <code>createVehicle</code><code class="codenor">[B_Sniper_F, getMarkerPos ["marker1", "marker2"], 4];</code>
@@ -248,11 +248,11 @@
           <br><br><br>
         </li>
         <li>Adding Items to Inventory
-          <p>With command: <code>addItem</code> you are able to add item to the inventory of any unit.</p>
+          <p>With the command: <code>addItem</code> you are able to add an item to the inventory of any unit.</p>
           <p>Syntax:</p>
           <p><code>unit <b>addItem</b> "item"</code></p>
           <ul>
-            <li>unit - Unit that will recieve the item .</li>
+            <li>unit - Unit that will receive the item.</li>
             <li>"item" - Item that will be added to the unit.</li>
           </ul>
           <div class="codetab">
@@ -302,7 +302,7 @@
       <p>There are also two main types of Removing Assets:</p>
       <ol>
         <li>Removing assets from the map
-          <p>For that, the best command is <code>deleteVehicle</code>, that allows you to remove any assets on the
+          <p>For that, the best command is <code>deleteVehicle</code>, which allows you to remove any assets on the
             map.</p>
           <p>Syntax:</p>
           <p><code><b>deleteVehicle</b> unit</code></p>
@@ -315,11 +315,11 @@
           <br><br><br>
         </li>
         <li>Removing Items from Inventory
-          <p>With command: <code>removeItem</code> you are able to remove any item from the inventory of any unit.</p>
+          <p>With the command: <code>removeItem</code> you are able to remove any item from the inventory of any unit.</p>
           <p>Syntax:</p>
           <p><code>unit <b>removeItem</b> "item"</code></p>
           <ul>
-            <li>unit - Unit that will loose the item.</li>
+            <li>unit - Unit that will lose the item.</li>
             <li>"item" - Item that will be removed from the unit.</li>
           </ul>
           <div class="codetab">
@@ -329,7 +329,7 @@
       </ol>
       <hr class="new1">
       <h1 id="anim">Animation</h1>
-      <p>There are also two main commands how to Animate units:</p>
+      <p>There are also two main commands on how to Animate units:</p>
       <ol>
         <li>
           <code>switchMove</code>
@@ -403,7 +403,7 @@
           </p>
           <ul>
             <li>object - Object that will have the action on it.</li>
-            <li>title - Displayed name of the action.</li>
+            <li>title - The displayed name of the action.</li>
             <li>script - Script or a link to a script that will start when activated.</li>
             <li>priority - How high will this action be.</li>
             <li>hideOnUse - Hides action after activation.</li>
