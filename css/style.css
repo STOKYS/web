@@ -23,6 +23,13 @@ body {
     width: 100%;
 }
 
+code{
+    background-color: rgba(34, 34, 34, 0.75);
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(255, 60, 60);
+}
+
 footer {
     height: 120px;
     background: rgb(2, 0, 36);
@@ -36,7 +43,7 @@ h1 {
 }
 
 h2 {
-    color: #646464;
+    color: #777777;
     font-family: purista, sans-serif;
     padding-top: 5px;
     padding-left: 20px;
@@ -145,6 +152,12 @@ ol {
     padding: 0px;
 }
 
+.carousel-caption{
+    background-color: rgb(10, 10, 10, .95);
+    border: #646464 solid 1px;
+    border-radius: 10px;
+}
+
 .center {
     text-align: center;
 }
@@ -164,12 +177,15 @@ ol {
 .codetab {
     background-color: rgba(80, 80, 80, .25);
     border: #111 3px dashed;
+    border-radius: 20px;
     width: 95%;
     padding: 10px;
 }
 
 .codetab>code {
     padding-left: 15px;
+    border-radius: 0px;
+    background-color: rgba(0,0,0,0);
 }
 
 .col-xl-12 {
@@ -261,6 +277,10 @@ ol {
     cursor: pointer;
 }
 
+.jumbotron{
+    background-color: rgba(0,0,0,.8);
+}
+
 .main {
     margin-left: 11%;
     font-size: 20px;
@@ -274,6 +294,10 @@ ol {
     color: white;
     margin-top: 50px;
     width: 100%;
+}
+
+.my-2{
+    border-color: #ffffff;
 }
 
 .overlay {
