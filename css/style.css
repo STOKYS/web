@@ -534,6 +534,15 @@ ol {
         margin-right: auto;
     }
 
+    .carousel-caption>p{
+        font-size: 10px;
+    }
+
+    .carousel-caption>h1{
+        font-size: 20px;
+    }
+
+
     .codetab {
         background-color: rgba(80, 80, 80, .25);
         border: #111 5px solid;
