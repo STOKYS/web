@@ -23,7 +23,7 @@ body {
     width: 100%;
 }
 
-code{
+code {
     background-color: rgba(34, 34, 34, 0.75);
     border-radius: 10px;
     padding: 5px;
@@ -148,11 +148,12 @@ ol {
     width: 256px;
     height: 256px;
     border-radius: 50%;
-    margin: auto;
-    padding: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: rgb(10, 10, 10, .95);
     border: #646464 solid 1px;
     border-radius: 10px;
@@ -185,12 +186,18 @@ ol {
 .codetab>code {
     padding-left: 15px;
     border-radius: 0px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .col-xl-12 {
     border: #111 3px solid;
     background-color: rgba(25, 25, 25, 0.85);
+}
+
+.colprof {
+    background-color: rgba(20, 20, 20, .8);
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .container {
@@ -203,7 +210,6 @@ ol {
 
 .container:hover .image {
     -webkit-filter: blur(2px);
-    /* Chrome, Safari, Opera */
     filter: blur(2px);
 }
 
@@ -248,6 +254,14 @@ ol {
     margin: auto;
 }
 
+.important {
+    background-color: rgba(30, 30, 30, .8);
+    border-radius: 10px;
+    padding: 3px 5px;
+    margin: 5px 0px 2px 15px;
+    width: 20%;
+}
+
 .image {
     display: block;
     width: 100%;
@@ -260,8 +274,6 @@ ol {
     width: 0px;
     height: 0px;
     opacity: 0;
-    padding-left: 70px;
-
 }
 
 .inputfile+label {
@@ -277,8 +289,8 @@ ol {
     cursor: pointer;
 }
 
-.jumbotron{
-    background-color: rgba(0,0,0,.8);
+.jumbotron {
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .main {
@@ -296,7 +308,7 @@ ol {
     width: 100%;
 }
 
-.my-2{
+.my-2 {
     border-color: #ffffff;
 }
 
@@ -438,6 +450,14 @@ ol {
     margin-left: 20px;
 }
 
+.vloz {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
 .vyber {
     padding: 8px 8px 400px 8px;
     width: 70%;
@@ -502,8 +522,10 @@ ol {
     .avatar {
         width: 256px !important;
         height: 256px !important;
-        margin-left: 90px;
         border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .codetab {
