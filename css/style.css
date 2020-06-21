@@ -74,6 +74,7 @@ p {
     padding-top: 20px;
     padding-left: 20px;
     color: #f1f1f1;
+    transition-duration: .5s;
 }
 
 table,
@@ -233,6 +234,12 @@ ol {
     border-radius: 10px;
 }
 
+.division{
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 20px;
+    background-color: rgba(10,10,10,0.5);
+}
+
 .dropdown-container {
     display: none;
     background-color: #262626;
@@ -259,7 +266,7 @@ ol {
     border-radius: 10px;
     padding: 3px 5px;
     margin: 5px 0px 2px 15px;
-    width: 20%;
+    width: 33%;
 }
 
 .image {
@@ -267,7 +274,6 @@ ol {
     width: 100%;
     height: auto;
     transition-duration: 1s;
-
 }
 
 .inputfile {
